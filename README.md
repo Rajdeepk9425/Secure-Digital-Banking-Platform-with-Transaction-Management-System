@@ -1,112 +1,121 @@
 # Secure Digital Banking Platform with Transaction Management System
 
-A secure full-stack digital banking application developed using **Spring
-Boot** and **React**. The platform provides core banking operations such
-as customer registration, authentication, account management, deposits,
-withdrawals, fund transfers, transaction history, payments, and loan
-management through a user-friendly web interface.
+A full-stack digital banking application developed using **Java, Spring
+Boot, Spring Data JPA, Spring Security, MySQL, and React.js**. The
+system provides customer/account management and banking operations
+including deposits, withdrawals, fund transfers, transaction management,
+payments, and loan management.
 
 ## 📌 Project Overview
 
 The **Secure Digital Banking Platform with Transaction Management
-System** is designed to provide customers with a convenient and secure
-way to manage their banking activities digitally.
+System** is designed to provide a web-based banking experience where
+customers can manage their accounts and perform common banking
+operations through a React frontend connected to a Spring Boot REST
+backend.
 
-The application follows a client-server architecture:
+The backend is built with Spring Boot and uses Spring Data JPA with
+MySQL for persistence. Spring Security is used for application security.
+The Maven configuration confirms Java 17, Spring Boot 3.5.16, Spring
+Data JPA, Spring Security, Spring Web, and MySQL Connector/J
+dependencies.
 
--   **Frontend:** React.js
--   **Backend:** Spring Boot REST APIs
--   **Database:** MySQL
--   **Security:** Spring Security and JWT
--   **Build Tool:** Maven
--   **API Testing:** Postman
-
-## ✨ Key Features
+## ✨ Main Modules
 
 ### 👤 Customer Management
 
 -   Customer registration
--   Customer login and authentication
--   Secure password encryption
--   JWT-based authentication
--   Customer profile management
+-   Customer login
+-   Customer account information
+-   Customer-related banking operations
 
 ### 🏦 Account Management
 
--   Account creation and management
 -   Account details
--   Account balance
--   Deposit money
--   Withdraw money
--   Fund transfer between accounts
--   Balance validation
+-   Balance management
+-   Deposit
+-   Withdrawal
+-   Fund transfer
 
-### 💳 Transaction Management
+### 💸 Transaction Management
 
 -   Deposit transactions
 -   Withdrawal transactions
 -   Fund transfer transactions
--   Transaction status tracking
--   Transaction history
--   Validation for invalid or insufficient-balance transactions
+-   Transaction records/history
+-   Transaction status and validation
 
-### 💰 Payment Management
+### 💳 Payment Management
 
--   Payment processing
+-   Payment operations
 -   Payment status management
--   Transaction records for payments
+-   Payment transaction records
 
 ### 🏠 Loan Management
 
--   Loan application
--   Loan details
--   Loan status
--   Loan-related transaction management
+-   Customer loan operations
+-   Loan application/details
+-   Loan status management
+-   Customer-loan related operations
 
 ### 🔐 Security
 
 -   Spring Security
--   JWT authentication
--   BCrypt password encryption
--   Protected REST endpoints
--   Role-based access where applicable
--   Global exception handling
+-   Password encoding
+-   Protected application resources
+-   Authentication and authorization configuration
 
-## 🛠️ Technologies Used
+> **Note:** The current project documentation intentionally does not
+> claim JWT authentication. The backend uses the Spring Security
+> implementation present in the project.
 
-  Layer               Technologies
-  ------------------- --------------------------------
-  Frontend            React.js, HTML, CSS, Bootstrap
-  Backend             Java, Spring Boot
-  Security            Spring Security, JWT
-  Database            MySQL
-  ORM / Persistence   Spring Data JPA / Hibernate
-  API                 REST APIs
-  Build Tool          Maven
-  Testing             Postman
-  IDE                 Eclipse / VS Code
+## 🛠️ Technology Stack
 
-## 🏗️ Project Architecture
+  Category       Technology
+  -------------- -----------------------------
+  Frontend       React.js, HTML, CSS
+  Backend        Java, Spring Boot
+  Security       Spring Security
+  Persistence    Spring Data JPA / Hibernate
+  Database       MySQL
+  API            REST APIs
+  Build Tool     Maven
+  Java Version   Java 17
+  API Testing    Postman
+  IDE            Eclipse / VS Code
+
+The backend Maven project uses Java 17 and Spring Boot 3.5.16 and
+includes Spring Boot Data JPA, Spring Security, Spring Web, and MySQL
+Connector/J. fileciteturn1file0L15-L24 fileciteturn1file0L39-L59
+
+## 🏗️ Application Architecture
 
 ``` text
-┌───────────────────────────────┐
-│        React Frontend         │
-│     User Interface / UI       │
-└───────────────┬───────────────┘
-                │ REST API
-                ▼
-┌───────────────────────────────┐
-│       Spring Boot Backend     │
-│ Controllers → Services → DAO  │
-│ Security / JWT / Validation   │
-└───────────────┬───────────────┘
-                │ JPA / Hibernate
-                ▼
-┌───────────────────────────────┐
-│          MySQL Database       │
-│ Users / Accounts /            │
-│ Transactions / Loans / Payments│
-└───────────────────────────────┘
+┌──────────────────────────────────────┐
+│            React Frontend            │
+│              Port 3737               │
+│                                      │
+│  Login | Account | Transactions     │
+│  Payments | Loans | Customer UI     │
+└──────────────────┬───────────────────┘
+                   │
+                   │ REST API
+                   ▼
+┌──────────────────────────────────────┐
+│          Spring Boot Backend         │
+│              Port 9797               │
+│                                      │
+│ Controllers → Services → DAO/Repo   │
+│            Spring Security           │
+└──────────────────┬───────────────────┘
+                   │
+                   │ JPA / Hibernate
+                   ▼
+┌──────────────────────────────────────┐
+│              MySQL                   │
+│ Customer | Account | Transaction     │
+│ Payment | Loan | User Data           │
+└──────────────────────────────────────┘
 ```
 
 ## 📂 Repository Structure
@@ -130,7 +139,7 @@ Secure-Digital-Banking-Platform-with-Transaction-Management-System/
 
 ## ⚙️ Prerequisites
 
-Install the following before running the project:
+Install the following software before running the project:
 
 -   Java 17 or above
 -   Maven
@@ -138,52 +147,55 @@ Install the following before running the project:
 -   Node.js and npm
 -   Eclipse IDE / VS Code
 -   Git
+-   Postman (for API testing)
 
-## 🚀 How to Run the Backend
+## 🚀 Backend Setup
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ``` bash
 git clone https://github.com/Rajdeepk9425/Secure-Digital-Banking-Platform-with-Transaction-Management-System.git
 cd Secure-Digital-Banking-Platform-with-Transaction-Management-System
 ```
 
-### 2. Open the backend
+### 2. Open Backend
 
 Open the `FinCoreBank` folder in Eclipse or another Java IDE.
 
 ### 3. Configure MySQL
 
-Create a MySQL database and update the database configuration in:
+Create the required MySQL database and configure the database properties
+in:
 
 ``` text
 FinCoreBank/src/main/resources/application.properties
 ```
 
-Configure:
+Use your local database credentials.
 
-``` properties
-spring.datasource.url=jdbc:mysql://localhost:3306/your_database
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-```
+**Do not publish real database passwords, API keys, or other secrets in
+a public repository.**
 
-Do not commit real database passwords or JWT secrets to GitHub.
+### 4. Start the Backend
 
-### 4. Run the Spring Boot application
-
-Using Maven:
+From the backend directory:
 
 ``` bash
 cd FinCoreBank
 mvn spring-boot:run
 ```
 
-Or run the main Spring Boot application class directly from Eclipse.
+Or run the Spring Boot main application class from Eclipse.
 
-## 🌐 How to Run the Frontend
+### Backend URL
 
-Open a new terminal:
+``` text
+http://localhost:9797
+```
+
+## 🌐 Frontend Setup
+
+Open another terminal:
 
 ``` bash
 cd fincore-front
@@ -191,101 +203,108 @@ npm install
 npm start
 ```
 
-The React application will normally start at:
+### Frontend URL
 
 ``` text
-http://localhost:3000
+http://localhost:3737
 ```
 
-Make sure the backend is running and the frontend API configuration
-points to the correct backend URL.
+Make sure the backend is running on port `9797` before using frontend
+features that communicate with the backend.
 
-## 🔄 Main Application Flow
+## 🔄 Application Flow
 
 ``` text
 Customer
    │
    ▼
-Registration / Login
+Login / Registration
    │
    ▼
-JWT Authentication
-   │
-   ▼
-Dashboard
+Customer Dashboard
    │
    ├── Account Details
+   │
    ├── Deposit
+   │
    ├── Withdrawal
+   │
    ├── Fund Transfer
+   │
    ├── Transaction History
+   │
    ├── Payments
+   │
    └── Loan Management
 ```
 
 ## 🧪 API Testing
 
-REST APIs can be tested using **Postman**.
+The backend REST APIs can be tested using **Postman**.
 
-Typical operations include:
+Typical API areas include:
 
--   User registration
--   User login
--   Account details
+-   Customer/Login operations
+-   Account operations
 -   Deposit
 -   Withdrawal
 -   Fund transfer
--   Transaction history
+-   Transaction operations
 -   Payment operations
 -   Loan operations
 
-Authentication-protected APIs require the JWT token obtained after
-successful login.
+## 🔒 Security Notes
 
-## 🔒 Security Considerations
+The backend includes Spring Security as a project dependency and
+security configuration. fileciteturn1file0L42-L53
 
--   Passwords are stored using BCrypt hashing.
--   JWT is used for authenticated API access.
--   Sensitive endpoints are protected through Spring Security.
--   Input validation and exception handling are implemented.
--   Database credentials and secret keys should be maintained outside
-    the public repository in production environments.
+For a public GitHub repository:
+
+-   Never commit production database passwords.
+-   Never commit private API keys or secrets.
+-   Use environment variables or external configuration for sensitive
+    values.
+-   Use HTTPS when deploying the application.
+-   Use a production-grade database configuration before deployment.
 
 ## 📈 Future Enhancements
 
-Possible future improvements include:
+Possible future improvements:
 
--   Online bill payment integration
--   Real payment gateway integration
--   Email/SMS transaction notifications
--   Two-factor authentication
 -   OTP-based verification
+-   Two-factor authentication
+-   Email/SMS transaction notifications
+-   Real payment gateway integration
+-   Online bill payments
 -   Admin analytics dashboard
--   Advanced fraud detection
+-   Fraud detection and transaction monitoring
 -   Cloud deployment
--   Docker and Kubernetes deployment
--   Microservices-based scaling
--   Detailed financial reports
+-   Docker containerization
+-   Kubernetes-based deployment
+-   Advanced financial reports
 
-## 🎓 Project Purpose
+## 🎓 Project Objectives
 
-This project was developed as a full-stack banking application to
-demonstrate practical implementation of:
+This project demonstrates practical implementation of:
 
+-   Full-stack web application development
 -   Java and Spring Boot
 -   REST API development
 -   React frontend development
--   Database management with MySQL
--   Authentication and authorization
--   Transaction processing
--   Exception handling
--   Full-stack application integration
+-   MySQL database integration
+-   JPA/Hibernate persistence
+-   Spring Security
+-   Banking transaction processing
+-   Payment and loan management
+-   Exception handling and validation
+-   Frontend-backend integration
 
 ## 👨‍💻 Author
 
 **Rajdeep Kala**
 
-GitHub: [Rajdeepk9425](https://github.com/Rajdeepk9425)
+GitHub:\
+https://github.com/Rajdeepk9425
 
 ## 📄 License
 
