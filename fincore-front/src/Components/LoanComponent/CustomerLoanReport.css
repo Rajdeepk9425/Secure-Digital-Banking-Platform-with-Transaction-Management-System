@@ -1,0 +1,524 @@
+/* =========================================================
+   CUSTOMER LOAN REPORT
+   FINCORE BURGUNDY + GOLD THEME
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.loan-report-page {
+    min-height: 100vh;
+
+    padding: 30px 40px 50px;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        135deg,
+        #faf7f3,
+        #f8f3ee,
+        #f5eee8
+    );
+
+    color: #5a263d;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.loan-report-heading {
+    position: relative;
+
+    width: calc(100% - 40px);
+    max-width: 1780px;
+
+    margin: 0 auto 28px;
+
+    padding: 4px 0 4px 20px;
+
+    box-sizing: border-box;
+
+    color: #651136 !important;
+
+    font-size: 30px !important;
+
+    line-height: 1.55;
+
+    font-weight: 700 !important;
+
+    text-align: left;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    box-shadow: none !important;
+}
+
+
+/* Gold vertical line */
+
+.loan-report-heading::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 5px;
+
+    width: 6px;
+    height: 82px;
+
+    background: #d4a72c;
+
+    border-radius: 5px;
+}
+
+
+/* Remove underline */
+
+.loan-report-heading u {
+    text-decoration: none !important;
+
+    color: #651136 !important;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.loan-report-table {
+    width: calc(100% - 40px);
+
+    max-width: 1780px;
+
+    min-width: 1150px;
+
+    margin: 0 auto;
+
+    border-collapse: separate !important;
+
+    border-spacing: 0 !important;
+
+    overflow: hidden;
+
+    background: #ffffff !important;
+
+    border: none !important;
+
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 8px 25px rgba(83, 20, 48, 0.09) !important;
+
+    color: #5e3d4a !important;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.loan-report-table thead {
+    background: transparent !important;
+}
+
+
+/*
+   IMPORTANT:
+   !important is used here because DisplayView.css /
+   FinCorePage.css may contain global th styles.
+*/
+
+.loan-report-table thead tr {
+    background: linear-gradient(
+        135deg,
+        #691238,
+        #7b1945
+    ) !important;
+}
+
+
+.loan-report-table thead th {
+    padding: 20px 14px !important;
+
+    background: linear-gradient(
+        135deg,
+        #691238,
+        #7b1945
+    ) !important;
+
+    color: #ffffff !important;
+
+    border: none !important;
+
+    border-bottom: 3px solid #d4a72c !important;
+
+    font-size: 14px !important;
+
+    font-weight: 700 !important;
+
+    text-align: center !important;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.2px;
+
+    white-space: nowrap;
+
+    box-shadow: none !important;
+}
+
+
+/* First header */
+
+.loan-report-table thead th:first-child {
+    border-top-left-radius: 14px !important;
+}
+
+
+/* Last header */
+
+.loan-report-table thead th:last-child {
+    border-top-right-radius: 14px !important;
+}
+
+
+/* =========================================================
+   TABLE BODY
+   ========================================================= */
+
+.loan-report-table tbody {
+    background: #ffffff !important;
+}
+
+
+.loan-report-table tbody tr {
+    background: #ffffff !important;
+
+    transition:
+        background 0.2s ease;
+}
+
+
+/* Alternate row */
+
+.loan-report-table tbody tr:nth-child(even) {
+    background: #fcf5f8 !important;
+}
+
+
+/* Hover */
+
+.loan-report-table tbody tr:hover {
+    background: #fff9ed !important;
+}
+
+
+/* =========================================================
+   TABLE CELLS
+   ========================================================= */
+
+.loan-report-table tbody td {
+    padding: 18px 14px !important;
+
+    background: transparent !important;
+
+    color: #5e3d4a !important;
+
+    border: none !important;
+
+    border-bottom: 1px solid #eee2df !important;
+
+    text-align: center !important;
+
+    font-size: 14px !important;
+
+    white-space: nowrap;
+}
+
+
+/* Last row */
+
+.loan-report-table tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+
+/* =========================================================
+   LOAN ID
+   ========================================================= */
+
+.loan-report-table tbody td:first-child {
+    color: #651136 !important;
+
+    font-weight: 700 !important;
+
+    font-size: 14px !important;
+}
+
+
+/* =========================================================
+   MONEY VALUES
+   ========================================================= */
+
+.loan-report-table tbody td:nth-child(2),
+.loan-report-table tbody td:nth-child(6),
+.loan-report-table tbody td:nth-child(7),
+.loan-report-table tbody td:nth-child(8) {
+
+    color: #087f3f !important;
+
+    font-size: 15px !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   TENURE / INTEREST RATE
+   ========================================================= */
+
+.loan-report-table tbody td:nth-child(3),
+.loan-report-table tbody td:nth-child(4),
+.loan-report-table tbody td:nth-child(5) {
+
+    color: #5e3d4a !important;
+
+    font-weight: 500 !important;
+}
+
+
+/* =========================================================
+   APPLY LOAN BUTTON
+   ========================================================= */
+
+.loan-report-table .apply-loan-btn {
+
+    min-width: 115px;
+
+    padding: 11px 17px !important;
+
+    background: #651136 !important;
+
+    border: 1px solid #651136 !important;
+
+    border-radius: 9px !important;
+
+    color: #ffffff !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    cursor: pointer;
+
+    box-shadow: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.loan-report-table .apply-loan-btn:hover {
+
+    background: #84194a !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(101, 17, 54, 0.22) !important;
+}
+
+
+.loan-report-table .apply-loan-btn:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RETURN SECTION
+   ========================================================= */
+
+.loan-report-return {
+
+    width: calc(100% - 40px);
+
+    max-width: 1780px;
+
+    margin: 24px auto 0;
+
+    padding: 0;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   RETURN BUTTON
+   ========================================================= */
+
+.loan-report-return button {
+
+    padding: 14px 25px !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #d4a72c !important;
+
+    border-radius: 10px !important;
+
+    color: #651136 !important;
+
+    font-size: 15px !important;
+
+    font-weight: 700 !important;
+
+    cursor: pointer;
+
+    box-shadow: none !important;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.loan-report-return button:hover {
+
+    background: #651136 !important;
+
+    border-color: #651136 !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 14px rgba(101, 17, 54, 0.18) !important;
+}
+
+
+/* =========================================================
+   TABLE SCROLLBAR
+   ========================================================= */
+
+.loan-report-page::-webkit-scrollbar {
+    height: 8px;
+}
+
+
+.loan-report-page::-webkit-scrollbar-track {
+    background: #f5eee8;
+}
+
+
+.loan-report-page::-webkit-scrollbar-thumb {
+    background: #813052;
+
+    border-radius: 10px;
+}
+
+
+.loan-report-page::-webkit-scrollbar-thumb:hover {
+    background: #651136;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .loan-report-page {
+        padding: 25px 25px 45px;
+    }
+
+    .loan-report-table {
+        overflow-x: auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .loan-report-page {
+        padding: 20px 15px 35px;
+    }
+
+
+    .loan-report-heading {
+        width: 100%;
+
+        margin-bottom: 22px;
+
+        padding-left: 17px;
+
+        font-size: 23px !important;
+    }
+
+
+    .loan-report-heading::before {
+        width: 5px;
+
+        height: 65px;
+    }
+
+
+    .loan-report-table {
+        width: 100%;
+
+        min-width: 1150px;
+    }
+
+
+    .loan-report-table thead th {
+        padding: 16px 11px !important;
+
+        font-size: 12px !important;
+    }
+
+
+    .loan-report-table tbody td {
+        padding: 15px 11px !important;
+
+        font-size: 13px !important;
+    }
+
+
+    .loan-report-return {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .loan-report-return button {
+        width: 150px;
+    }
+
+}

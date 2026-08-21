@@ -1,0 +1,883 @@
+/* =====================================================
+   CUSTOMER LOAN APPROVAL PAGE
+===================================================== */
+
+.loan-report-page {
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.loan-page-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.loan-report-heading {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+}
+
+
+.loan-report-subtitle {
+
+    margin-top: 8px;
+
+    margin-bottom: 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+}
+
+
+/* =====================================================
+   PENDING COUNT
+===================================================== */
+
+.loan-pending-count {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 150px;
+
+    padding: 15px 20px;
+
+    border-radius: 10px;
+
+    background: #fff3cd;
+
+    border: 1px solid #ffe69c;
+
+}
+
+
+.loan-pending-count span {
+
+    font-size: 13px;
+
+    color: #856404;
+
+}
+
+
+.loan-pending-count strong {
+
+    margin-top: 5px;
+
+    font-size: 28px;
+
+    color: #856404;
+
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.loan-approval-container {
+
+    width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =====================================================
+   APPROVAL HEADER
+===================================================== */
+
+.loan-approval-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #eeeeee;
+
+}
+
+
+.loan-approval-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    background: #fff3cd;
+
+}
+
+
+.loan-approval-header h2 {
+
+    margin: 0;
+
+    font-size: 21px;
+
+}
+
+
+.loan-approval-header p {
+
+    margin: 5px 0 0;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.loan-loading {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 60px 20px;
+
+}
+
+
+.loan-loading-icon {
+
+    font-size: 40px;
+
+    animation: loadingRotate 1.5s linear infinite;
+
+}
+
+
+.loan-loading p {
+
+    margin-top: 15px;
+
+    color: #666;
+
+}
+
+
+@keyframes loadingRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.loan-empty {
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+
+.loan-empty-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e8f7ee;
+
+    color: #28a745;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+}
+
+
+.loan-empty h3 {
+
+    margin: 0;
+
+    font-size: 21px;
+
+}
+
+
+.loan-empty p {
+
+    margin-top: 10px;
+
+    color: #777;
+
+}
+
+
+/* =====================================================
+   TABLE WRAPPER
+===================================================== */
+
+.loan-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.loan-report-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 1450px;
+
+}
+
+
+.loan-report-table thead th {
+
+    padding: 14px 12px;
+
+    text-align: left;
+
+    background: #f5f7fa;
+
+    color: #333;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    border-bottom: 2px solid #e5e5e5;
+
+    white-space: nowrap;
+
+}
+
+
+.loan-report-table tbody td {
+
+    padding: 14px 12px;
+
+    font-size: 13px;
+
+    color: #444;
+
+    border-bottom: 1px solid #eeeeee;
+
+    white-space: nowrap;
+
+}
+
+
+.loan-report-table tbody tr:hover {
+
+    background: #fafafa;
+
+}
+
+
+/* =====================================================
+   PENDING STATUS
+===================================================== */
+
+.loan-pending-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background: #fff3cd;
+
+    color: #856404;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
+.loan-action-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+/* ACCEPT BUTTON */
+
+.apply-loan-btn {
+
+    border: none;
+
+    padding: 8px 13px;
+
+    border-radius: 6px;
+
+    background: #28a745;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+
+}
+
+
+.apply-loan-btn:hover {
+
+    background: #218838;
+
+    transform: translateY(-1px);
+
+}
+
+
+.apply-loan-btn:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* REJECT BUTTON */
+
+.delete-btn {
+
+    border: none;
+
+    padding: 8px 13px;
+
+    border-radius: 6px;
+
+    background: #dc3545;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+
+}
+
+
+.delete-btn:hover {
+
+    background: #c82333;
+
+    transform: translateY(-1px);
+
+}
+
+
+.delete-btn:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* =====================================================
+   RETURN BUTTON
+===================================================== */
+
+.loan-report-return {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 30px;
+
+}
+
+
+.loan-report-return button {
+
+    border: none;
+
+    padding: 11px 20px;
+
+    border-radius: 7px;
+
+    background: #343a40;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+
+}
+
+
+.loan-report-return button:hover {
+
+    background: #23272b;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =====================================================
+   TOAST NOTIFICATION
+===================================================== */
+
+.toast {
+
+    position: fixed;
+
+    top: 25px;
+
+    right: 25px;
+
+    min-width: 350px;
+
+    max-width: 450px;
+
+    min-height: 70px;
+
+    padding: 14px 16px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border-radius: 10px;
+
+    z-index: 99999;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.18);
+
+    animation:
+        toastSlideIn 0.35s ease,
+        toastFadeOut 0.4s ease 2.6s forwards;
+
+}
+
+
+/* =====================================================
+   SUCCESS TOAST
+===================================================== */
+
+.toast-success {
+
+    background: #ffffff;
+
+    border-left: 5px solid #28a745;
+
+}
+
+
+.toast-success .toast-icon {
+
+    background: #28a745;
+
+}
+
+
+/* =====================================================
+   ERROR TOAST
+===================================================== */
+
+.toast-error {
+
+    background: #ffffff;
+
+    border-left: 5px solid #dc3545;
+
+}
+
+
+.toast-error .toast-icon {
+
+    background: #dc3545;
+
+}
+
+
+/* =====================================================
+   TOAST ICON
+===================================================== */
+
+.toast-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    min-width: 34px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   TOAST CONTENT
+===================================================== */
+
+.toast-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    flex: 1;
+
+}
+
+
+.toast-content strong {
+
+    font-size: 14px;
+
+    color: #222;
+
+}
+
+
+.toast-content span {
+
+    font-size: 13px;
+
+    color: #666;
+
+    line-height: 1.4;
+
+}
+
+
+/* =====================================================
+   TOAST CLOSE BUTTON
+===================================================== */
+
+.toast-close {
+
+    width: 28px;
+
+    height: 28px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #888;
+
+    font-size: 22px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: all 0.2s ease;
+
+}
+
+
+.toast-close:hover {
+
+    background: #f0f0f0;
+
+    color: #333;
+
+}
+
+
+/* =====================================================
+   TOAST ANIMATION
+===================================================== */
+
+@keyframes toastSlideIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(100%);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+
+@keyframes toastFadeOut {
+
+    from {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+    to {
+
+        opacity: 0;
+
+        transform: translateX(100%);
+
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .loan-report-page {
+
+        padding: 15px;
+
+    }
+
+
+    .loan-page-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+
+    .loan-pending-count {
+
+        align-self: stretch;
+
+    }
+
+
+    .loan-approval-container {
+
+        padding: 15px;
+
+    }
+
+
+    .loan-approval-header {
+
+        align-items: flex-start;
+
+    }
+
+
+    .toast {
+
+        top: 15px;
+
+        right: 15px;
+
+        left: 15px;
+
+        min-width: auto;
+
+        max-width: none;
+
+        width: auto;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .loan-report-heading {
+
+        font-size: 25px;
+
+    }
+
+
+    .loan-approval-header h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .loan-approval-header p {
+
+        font-size: 13px;
+
+    }
+
+
+    .toast {
+
+        padding: 12px;
+
+    }
+
+
+    .toast-content strong {
+
+        font-size: 13px;
+
+    }
+
+
+    .toast-content span {
+
+        font-size: 12px;
+
+    }
+
+}

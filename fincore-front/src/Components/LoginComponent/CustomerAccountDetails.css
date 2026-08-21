@@ -1,0 +1,480 @@
+
+
+
+.account-page{
+
+
+    min-height:100vh;
+
+    padding:40px;
+
+    background:#FAF7F2;
+
+
+}
+
+
+
+
+
+.account-card{
+
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:22px;
+
+
+    border-top:4px solid #D4AF37;
+
+
+    box-shadow:
+
+    0 8px 30px rgba(59,10,34,.12);
+
+
+}
+
+
+
+
+
+.account-title{
+
+
+    text-align:center;
+
+
+    color:#5A1235;
+
+
+    font-size:32px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+.account-container{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(320px,1fr));
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.account-details-card{
+
+
+    background:#FFFFFF;
+
+
+    border-radius:20px;
+
+
+    padding:25px;
+
+
+    border-top:4px solid #D4AF37;
+
+
+    box-shadow:
+
+
+    0 8px 22px rgba(59,10,34,.10);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.account-details-card:hover{
+
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+
+
+    0 12px 30px rgba(59,10,34,.18);
+
+
+}
+
+
+
+
+
+
+.account-card-header{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:15px;
+
+
+    padding-bottom:18px;
+
+
+    border-bottom:1px solid #eee;
+
+
+}
+
+
+
+
+.account-icon{
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    border-radius:15px;
+
+
+    background:#FBF4E5;
+
+
+    border:1px solid #E4D39B;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+.account-card-header h3{
+
+
+    margin:0;
+
+
+    color:#5A1235;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+
+.account-card-header p{
+
+
+    margin-top:5px;
+
+
+    color:#777;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.account-info{
+
+
+    margin-top:20px;
+
+
+}
+
+
+
+
+
+.account-info div{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+
+
+.account-info span{
+
+
+    color:#8A777F;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+.account-info strong{
+
+
+    color:#3B0A22;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+.account-balance{
+
+
+    color:#087A3B !important;
+
+
+    font-size:22px !important;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+.status-badge{
+
+
+    padding:7px 18px;
+
+
+    border-radius:30px;
+
+
+    color:white;
+
+
+    font-weight:700;
+
+
+    font-size:13px;
+
+
+}
+
+
+
+.active{
+
+
+    background:#087A3B;
+
+
+}
+
+
+
+
+
+
+
+/* RETURN BUTTON */
+
+
+.return-btn{
+
+
+    margin-top:35px;
+
+
+    background:#5A1235 !important;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    padding:12px 45px;
+
+
+    border-radius:40px;
+
+
+    font-size:17px;
+
+
+    font-weight:600;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.return-btn:hover{
+
+
+    background:#7A1F45 !important;
+
+
+    transform:translateY(-2px);
+
+
+}
+
+
+
+
+
+
+
+
+/* EMPTY DATA */
+
+
+.no-data{
+
+
+    text-align:center;
+
+
+    padding:40px;
+
+
+    color:#777;
+
+
+    font-size:18px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:700px){
+
+
+.account-page{
+
+
+padding:20px;
+
+
+}
+
+
+
+.account-card{
+
+
+padding:20px;
+
+
+}
+
+
+
+.account-container{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.account-title{
+
+
+font-size:25px;
+
+
+}
+
+
+}

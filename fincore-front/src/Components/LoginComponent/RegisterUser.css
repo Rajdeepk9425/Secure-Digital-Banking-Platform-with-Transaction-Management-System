@@ -1,0 +1,580 @@
+
+
+.fincore-register-page {
+
+    min-height: 100vh;
+
+    padding: 30px 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(212,175,55,0.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(122,31,69,0.08),
+            transparent 35%
+        ),
+        #FAF7F2;
+}
+
+
+
+.fincore-register-card {
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    display: grid;
+
+    grid-template-columns: 38% 62%;
+
+    background: #FFFFFF;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    border: 1px solid #E8DCCB;
+
+    box-shadow:
+        0 18px 50px rgba(59,10,34,0.16);
+}
+
+
+
+.register-brand-panel {
+
+    padding: 50px 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background:
+        linear-gradient(
+            145deg,
+            #3B0A22,
+            #5A1235,
+            #7A1F45
+        );
+}
+
+
+.register-bank-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(212,175,55,0.15);
+
+    border:
+        1px solid rgba(212,175,55,0.40);
+
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+
+.register-brand-panel h1 {
+
+    margin: 0;
+
+    font-size: 38px;
+
+    font-weight: 700;
+}
+
+
+.register-brand-subtitle {
+
+    margin-top: 6px;
+
+    color: #E6D6A8;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+
+
+
+.register-gold-line {
+
+    width: 55px;
+
+    height: 3px;
+
+    margin: 22px 0;
+
+    border-radius: 10px;
+
+    background: #D4AF37;
+}
+
+
+
+.register-brand-panel > p {
+
+    max-width: 285px;
+
+    color: #E9DCC1;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+
+
+.register-benefits {
+
+    width: 100%;
+
+    max-width: 270px;
+
+    margin-top: 28px;
+
+    text-align: left;
+}
+
+
+.register-benefits div {
+
+    padding: 8px 0;
+
+    color: #F4EBD7;
+
+    font-size: 13px;
+}
+
+
+.register-benefits span {
+
+    display: inline-flex;
+
+    width: 21px;
+
+    height: 21px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 8px;
+
+    border-radius: 50%;
+
+    background: #D4AF37;
+
+    color: #3B0A22;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+
+
+.register-form-panel {
+
+    padding: 45px 50px;
+
+    background: #FFFFFF;
+}
+
+
+
+
+.register-form-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 28px;
+}
+
+
+.register-small-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #FBF4E5;
+
+    border: 1px solid #E4D39B;
+
+    font-size: 21px;
+}
+
+
+.register-form-header h2 {
+
+    margin: 0;
+
+    color: #5A1235;
+
+    font-size: 26px;
+}
+
+
+.register-form-header p {
+
+    margin: 4px 0 0;
+
+    color: #8A777F;
+
+    font-size: 13px;
+}
+
+
+
+
+.register-form-group {
+
+    margin-bottom: 17px;
+}
+
+
+.register-input {
+
+    width: 100%;
+
+    min-height: 46px;
+
+    box-sizing: border-box;
+
+    padding: 11px 14px;
+
+    border: 1px solid #DCCFC1;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #FFFFFF;
+
+    color: #3B0A22;
+
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+
+.register-input:focus {
+
+    border-color: #D4AF37;
+
+    box-shadow:
+        0 0 0 3px rgba(212,175,55,0.14);
+}
+
+
+.register-input::placeholder {
+
+    color: #A5959C;
+}
+
+
+
+.register-helper {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #8A777F;
+
+    font-size: 11px;
+}
+
+
+
+.register-button-group {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+.register-submit-btn {
+
+    flex: 1;
+
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5A1235,
+            #7A1F45
+        );
+
+    color: #FFFFFF;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.register-submit-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(90,18,53,0.22);
+}
+
+
+.register-back-btn {
+
+    flex: 1;
+
+    border: 1px solid #D4AF37;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #5A1235;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.register-back-btn:hover {
+
+    background: #FBF4E5;
+
+    transform: translateY(-2px);
+}
+
+
+
+
+.register-success-message {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-top: 22px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #FBF4E5;
+
+    border: 1px solid #E4D39B;
+
+    border-left: 5px solid #D4AF37;
+
+    color: #5A1235;
+}
+
+
+.register-success-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #D4AF37;
+
+    color: #3B0A22;
+
+    font-weight: 700;
+}
+
+
+.register-success-message strong {
+
+    font-size: 14px;
+}
+
+
+.register-success-message p {
+
+    margin: 4px 0 10px;
+
+    color: #7A1F45;
+
+    font-size: 12px;
+}
+
+
+
+.register-login-btn {
+
+    border: none;
+
+    background: transparent;
+
+    color: #7A1F45;
+
+    font-weight: 700;
+
+    font-size: 12px;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+
+.register-login-btn:hover {
+
+    color: #D4AF37;
+}
+
+
+
+
+.register-footer {
+
+    margin-top: 18px;
+
+    color: #8A777F;
+
+    font-size: 11px;
+}
+
+
+
+
+@media (max-width: 850px) {
+
+    .fincore-register-card {
+
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+    }
+
+
+    .register-brand-panel {
+
+        padding: 35px 25px;
+    }
+
+
+    .register-benefits {
+
+        display: none;
+    }
+
+
+    .register-form-panel {
+
+        padding: 35px 30px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .fincore-register-page {
+
+        padding: 15px;
+    }
+
+
+    .register-form-panel {
+
+        padding: 30px 20px;
+    }
+
+
+    .register-button-group {
+
+        flex-direction: column;
+    }
+
+
+    .register-brand-panel h1 {
+
+        font-size: 32px;
+    }
+
+}

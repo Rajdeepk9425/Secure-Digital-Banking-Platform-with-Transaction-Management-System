@@ -1,0 +1,1012 @@
+
+
+.fincore-navbar {
+    background: linear-gradient(
+        135deg,
+        #3B0A22,
+        #5A1235,
+        #7A1F45
+    );
+
+    min-height: 78px;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.fincore-brand {
+    display: flex !important;
+    align-items: center;
+
+    color: white !important;
+    text-decoration: none;
+
+    margin-right: 40px;
+}
+
+.fincore-logo {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 14px;
+
+    background: rgba(212, 175, 55, 0.18);
+
+    border: 1px solid rgba(212, 175, 55, 0.45);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 26px;
+
+    margin-right: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.brand-name {
+    font-size: 24px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+.brand-subtitle {
+    font-size: 11px;
+
+    color: #E6D6A8;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+
+.fincore-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+
+.fincore-dropdown > .dropdown-toggle {
+    color: white !important;
+
+    font-weight: 500;
+
+    padding: 12px 15px;
+
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.fincore-dropdown > .dropdown-toggle:hover {
+    background: rgba(212, 175, 55, 0.16);
+
+    color: #F4D77B !important;
+
+    transform: translateY(-1px);
+}
+
+
+
+
+.menu-icon {
+    margin-right: 7px;
+
+    font-size: 15px;
+}
+
+
+.fincore-dropdown .dropdown-menu {
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 8px;
+
+    margin-top: 8px;
+
+    min-width: 225px;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.18);
+}
+
+.fincore-dropdown .dropdown-item {
+    padding: 12px 14px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    color: #3B0A22;
+
+    transition: all 0.25s ease;
+}
+
+.fincore-dropdown .dropdown-item:hover {
+    background: #FBF4E5;
+
+    color: #7A1F45;
+
+    transform: translateX(3px);
+}
+
+
+.fincore-dropdown .dropdown-item:active {
+    background: #D4AF37;
+
+    color: #3B0A22;
+}
+
+.fincore-logout {
+    color: #3B0A22 !important;
+
+    background: #D4AF37;
+
+    padding: 10px 18px !important;
+
+    margin-left: 12px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.fincore-logout:hover {
+    background: #F1D36B !important;
+
+    color: #3B0A22 !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(212,175,55,0.35);
+}
+
+
+.custom-toggler {
+    border-color: rgba(212,175,55,0.55) !important;
+}
+
+.custom-toggler:focus {
+    box-shadow: none !important;
+}
+
+
+.fincore-welcome {
+    margin: 25px auto;
+
+    width: 94%;
+
+    min-height: 155px;
+
+    padding: 30px 40px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5A1235,
+            #7A1F45
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 10px 30px rgba(59,10,34,0.20);
+
+    border-left: 5px solid #D4AF37;
+}
+
+
+.fincore-welcome h1 {
+    margin: 0 0 8px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+.fincore-welcome p {
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #E9DCC1;
+}
+
+
+.welcome-icon {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 20px;
+
+    background: rgba(212,175,55,0.15);
+
+    border: 1px solid rgba(212,175,55,0.35);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 40px;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,0.10);
+}
+
+
+body {
+    margin: 0;
+
+    background: #FAF7F2;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    color: #3B0A22;
+}
+
+
+.section-title {
+    color: #5A1235;
+
+    font-weight: 700;
+
+    border-left: 4px solid #D4AF37;
+
+    padding-left: 12px;
+}
+
+@media (max-width: 991px) {
+
+    .fincore-menu {
+        padding: 15px 0;
+
+        align-items: stretch;
+    }
+
+    .fincore-dropdown > .dropdown-toggle {
+        width: 100%;
+
+        text-align: left;
+    }
+
+    .fincore-logout {
+        margin-left: 0;
+
+        margin-top: 10px;
+
+        text-align: center;
+    }
+
+    .fincore-welcome {
+        padding: 25px;
+
+        width: 90%;
+    }
+
+    .fincore-welcome h1 {
+        font-size: 24px;
+    }
+
+    .welcome-icon {
+        width: 60px;
+        height: 60px;
+
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .brand-name {
+        font-size: 20px;
+    }
+
+    .brand-subtitle {
+        font-size: 9px;
+    }
+
+    .fincore-welcome {
+        min-height: 120px;
+    }
+
+    .fincore-welcome h1 {
+        font-size: 20px;
+    }
+
+    .fincore-welcome p {
+        font-size: 13px;
+    }
+
+    .welcome-icon {
+        display: none;
+    }
+}
+
+
+.customer-dashboard-grid {
+
+    width:94%;
+
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+
+
+.customer-dashboard-card {
+
+
+    background:#FFFFFF;
+
+
+    padding:25px;
+
+
+    border-radius:18px;
+
+
+    border-top:5px solid #D4AF37;
+
+
+    box-shadow:
+
+    0 8px 25px rgba(59,10,34,0.10);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.customer-dashboard-card:hover {
+
+
+    transform:translateY(-6px);
+
+
+    box-shadow:
+
+    0 12px 30px rgba(59,10,34,0.18);
+
+
+}
+
+
+
+
+
+.customer-dashboard-card h4 {
+
+
+    color:#8A777F;
+
+
+    font-size:14px;
+
+
+    text-transform:uppercase;
+
+
+    letter-spacing:.7px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.customer-dashboard-card h2 {
+
+
+    color:#5A1235;
+
+
+    font-size:28px;
+
+
+    font-weight:700;
+
+
+    margin:0;
+
+
+}
+
+
+
+
+.customer-transaction-section {
+
+
+    width:94%;
+
+
+    margin:30px auto;
+
+
+    background:#FFFFFF;
+
+
+    padding:25px;
+
+
+    border-radius:18px;
+
+
+    box-shadow:
+
+    0 8px 25px rgba(59,10,34,0.08);
+
+
+}
+
+
+
+
+
+.customer-section-header {
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.customer-section-header h2 {
+
+
+    color:#5A1235;
+
+
+    font-size:24px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+.customer-action-section {
+
+
+    width:94%;
+
+
+    margin:30px auto;
+
+
+}
+
+
+
+
+
+.customer-action-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+.customer-action-grid button {
+
+
+    background:#5A1235;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    padding:18px;
+
+
+    border-radius:15px;
+
+
+    font-size:16px;
+
+
+    font-weight:600;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+.customer-action-grid button:hover {
+
+
+    background:#7A1F45;
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.customer-dashboard-grid{
+
+
+    width:90%;
+
+
+}
+
+
+.customer-transaction-section,
+
+
+.customer-action-section{
+
+
+    width:90%;
+
+
+}
+}
+
+
+
+.customer-dashboard-card{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+    animation:
+
+    cardFadeIn .6s ease;
+
+
+}
+
+
+
+.customer-dashboard-card::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:100px;
+
+    height:100px;
+
+
+    right:-30px;
+
+    top:-30px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        rgba(212,175,55,.30),
+
+        rgba(90,18,53,.15)
+
+    );
+
+
+}
+
+
+
+.customer-dashboard-card:hover{
+
+
+    transform:
+
+    translateY(-8px)
+    scale(1.02);
+
+
+    box-shadow:
+
+    0 15px 35px
+
+    rgba(59,10,34,.18);
+
+
+}
+
+
+
+
+
+.customer-dashboard-card h4{
+
+
+    color:#7A1F45;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+.customer-dashboard-card h2{
+
+
+    color:#5A1235;
+
+
+    font-size:32px;
+
+
+    animation:
+
+    numberPop .5s ease;
+
+
+}
+
+
+
+
+@keyframes cardFadeIn{
+
+
+from{
+
+opacity:0;
+
+transform:
+translateY(25px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+
+}
+
+
+
+@keyframes numberPop{
+
+
+from{
+
+opacity:0;
+
+transform:
+scale(.5);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+scale(1);
+
+}
+
+
+}
+
+/* ===================================
+   LATEST TRANSACTIONS TABLE
+=================================== */
+
+
+.customer-transaction-section {
+
+    width:94%;
+
+    margin:30px auto;
+
+    background:#FFFFFF;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 8px 25px rgba(59,10,34,0.08);
+
+}
+
+
+
+.customer-section-header h2 {
+
+    color:#5A1235;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    border-left:4px solid #D4AF37;
+
+    padding-left:12px;
+
+}
+
+
+
+/* View All Button */
+
+.customer-view-btn {
+
+    background:linear-gradient(
+        135deg,
+        #5A1235,
+        #7A1F45
+    );
+
+    color:white;
+
+    border:none;
+
+    padding:11px 28px;
+
+    border-radius:25px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.customer-view-btn:hover {
+
+    background:#D4AF37;
+
+    color:#3B0A22;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 8px 20px rgba(212,175,55,.35);
+
+}
+
+
+
+
+/* Table Wrapper */
+
+.fincore-table-container {
+
+    overflow-x:auto;
+
+}
+
+
+
+
+/* Table */
+
+.fincore-table {
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:15px;
+
+    font-family:"Segoe UI",Arial,sans-serif;
+
+}
+
+
+
+
+/* Table Header */
+
+.fincore-table thead th {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #5A1235,
+        #7A1F45
+    );
+
+    color:white;
+
+    padding:15px;
+
+    text-align:center;
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+
+
+
+
+/* Table Data */
+
+.fincore-table tbody td {
+
+    padding:14px;
+
+    text-align:center;
+
+    color:#3B0A22;
+
+    font-size:14px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+
+
+/* Row Hover */
+
+.fincore-table tbody tr:hover {
+
+    background:#FBF4E5;
+
+}
+
+
+
+
+/* Deposit */
+
+.customer-deposit {
+
+    background:#E8F7EE;
+
+    color:#198754;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:700;
+
+}
+
+
+
+
+/* Withdraw */
+
+.customer-withdraw {
+
+    background:#FDECEC;
+
+    color:#B02A37;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-weight:700;
+
+}

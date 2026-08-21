@@ -1,0 +1,784 @@
+/* =========================================================
+   CUSTOMER WISE LOAN REPORT
+   ADMIN PANEL
+   ========================================================= */
+
+.customer-wise-loan-page {
+    min-height: 100vh;
+    padding: 35px 30px 50px;
+
+    background: linear-gradient(
+        135deg,
+        #fff7fb,
+        #f8eef4,
+        #f5e8ef
+    );
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.customer-wise-loan-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.customer-wise-loan-heading h1 {
+    margin: 0;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #5a1235;
+}
+
+.customer-wise-loan-heading p {
+    margin-top: 8px;
+
+    font-size: 15px;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   SEARCH SECTION
+   ========================================================= */
+
+.customer-wise-loan-search {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 30px;
+
+    background: #ffffff;
+
+    padding: 24px 25px;
+
+    border-radius: 16px;
+
+    border: 1px solid #ead3df;
+
+    box-shadow:
+        0 8px 25px rgba(90, 18, 53, 0.12);
+
+    box-sizing: border-box;
+}
+
+
+.customer-wise-loan-search-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.customer-wise-loan-search-content label {
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #5a1235;
+}
+
+
+.customer-wise-loan-search-content input {
+    flex: 1;
+
+    min-width: 220px;
+
+    padding: 11px 14px;
+
+    border: 1px solid #d8baca;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    color: #333;
+
+    background: #fff;
+}
+
+
+.customer-wise-loan-search-content input:focus {
+    border-color: #7a1f45;
+
+    box-shadow:
+        0 0 0 3px rgba(122, 31, 69, 0.10);
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+   ========================================================= */
+
+.customer-wise-loan-search-btn {
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #5a1235,
+        #7a1f45
+    );
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    box-shadow:
+        0 4px 10px rgba(90, 18, 53, 0.25);
+}
+
+
+.customer-wise-loan-search-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(90, 18, 53, 0.35);
+}
+
+
+.customer-wise-loan-search-btn:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   CLEAR BUTTON
+   ========================================================= */
+
+.customer-wise-loan-clear-btn {
+    padding: 11px 18px;
+
+    border: 1px solid #c9a8b8;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #5a1235;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.customer-wise-loan-clear-btn:hover {
+    background: #f8eaf1;
+
+    border-color: #7a1f45;
+}
+
+
+/* =========================================================
+   CUSTOMER INFORMATION
+   ========================================================= */
+
+.customer-wise-loan-info {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 20px;
+
+    padding: 18px 22px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    border: 1px solid #ead3df;
+
+    box-shadow:
+        0 5px 18px rgba(90, 18, 53, 0.10);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    box-sizing: border-box;
+}
+
+
+.customer-wise-loan-info span {
+    color: #777;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.customer-wise-loan-info strong {
+    color: #5a1235;
+
+    font-size: 15px;
+
+    margin-right: 25px;
+}
+
+
+/* =========================================================
+   TABLE CONTAINER
+   ========================================================= */
+
+.customer-wise-loan-table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    border: 1px solid #ead3df;
+
+    box-shadow:
+        0 8px 25px rgba(90, 18, 53, 0.15);
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.customer-wise-loan-table {
+    width: 100%;
+
+    min-width: 1300px;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.customer-wise-loan-table thead {
+    background: linear-gradient(
+        135deg,
+        #3b0a22,
+        #5a1235,
+        #7a1f45
+    );
+}
+
+
+.customer-wise-loan-table th {
+    padding: 16px 14px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    border-right: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.15
+    );
+}
+
+
+.customer-wise-loan-table th:last-child {
+    border-right: none;
+}
+
+
+/* =========================================================
+   TABLE BODY
+   ========================================================= */
+
+.customer-wise-loan-table td {
+    padding: 15px 14px;
+
+    text-align: center;
+
+    color: #333;
+
+    border-bottom: 1px solid #eadde4;
+
+    white-space: nowrap;
+}
+
+
+.customer-wise-loan-table tbody tr {
+    transition: 0.2s ease;
+}
+
+
+.customer-wise-loan-table tbody tr:hover {
+    background: #fff5f9;
+}
+
+
+/* =========================================================
+   CUSTOMER LOAN ID
+   ========================================================= */
+
+.customer-loan-id-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #f5dce8;
+
+    color: #6b123d;
+
+    font-weight: 700;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   LOAN ID
+   ========================================================= */
+
+.customer-loan-main-id-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #eee4f8;
+
+    color: #62328b;
+
+    font-weight: 600;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   LOAN AMOUNT
+   ========================================================= */
+
+.customer-loan-amount {
+    color: #197044;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   INTEREST RATE
+   ========================================================= */
+
+.customer-loan-interest {
+    color: #a05a00;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   EMI
+   ========================================================= */
+
+.customer-loan-emi {
+    color: #285b9b;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TOTAL INTEREST
+   ========================================================= */
+
+.customer-loan-total-interest {
+    color: #8a4b08;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TOTAL COST
+   ========================================================= */
+
+.customer-loan-total-cost {
+    color: #197044;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   LOAN TENURE
+   ========================================================= */
+
+.customer-loan-tenure {
+    color: #62328b;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.customer-loan-status,
+.customer-loan-status-approved,
+.customer-loan-status-pending,
+.customer-loan-status-rejected,
+.customer-loan-status-disbursed {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* APPROVED */
+
+.customer-loan-status-approved {
+    background: #e2f7e9;
+
+    color: #197044;
+}
+
+
+/* PENDING */
+
+.customer-loan-status-pending {
+    background: #fff0d5;
+
+    color: #9a5a00;
+}
+
+
+/* REJECTED */
+
+.customer-loan-status-rejected {
+    background: #ffe3e3;
+
+    color: #a52a2a;
+}
+
+
+/* DISBURSED */
+
+.customer-loan-status-disbursed {
+    background: #dff3ff;
+
+    color: #17658a;
+}
+
+
+/* DEFAULT STATUS */
+
+.customer-loan-status {
+    background: #eee4f8;
+
+    color: #62328b;
+}
+
+
+/* =========================================================
+   LOADING MESSAGE
+   ========================================================= */
+
+.customer-wise-loan-message {
+    min-height: 250px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   SPINNER
+   ========================================================= */
+
+.customer-wise-loan-spinner {
+    width: 42px;
+
+    height: 42px;
+
+    border: 4px solid #ead3df;
+
+    border-top: 4px solid #7a1f45;
+
+    border-radius: 50%;
+
+    animation:
+        customerWiseLoanSpin
+        0.8s linear infinite;
+
+    margin-bottom: 15px;
+}
+
+
+@keyframes customerWiseLoanSpin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.customer-wise-loan-empty {
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 50px auto;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(90, 18, 53, 0.12);
+
+    border: 1px solid #ead3df;
+
+    box-sizing: border-box;
+}
+
+
+.customer-wise-loan-empty-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+.customer-wise-loan-empty h2 {
+    margin: 0 0 10px;
+
+    color: #5a1235;
+
+    font-size: 23px;
+}
+
+
+.customer-wise-loan-empty p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.customer-wise-loan-error {
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #fff0f0;
+
+    border: 1px solid #f0bcbc;
+
+    border-radius: 12px;
+
+    color: #a52a2a;
+
+    box-sizing: border-box;
+}
+
+
+.customer-wise-loan-error button {
+    margin-top: 15px;
+
+    padding: 9px 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #7a1f45;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.customer-wise-loan-error button:hover {
+    background: #5a1235;
+}
+
+
+/* =========================================================
+   RETURN BUTTON
+   ========================================================= */
+
+.customer-wise-loan-return {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 25px;
+}
+
+
+.customer-wise-loan-return button {
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #5a1235,
+        #7a1f45
+    );
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(90, 18, 53, 0.25);
+
+    transition: 0.2s ease;
+}
+
+
+.customer-wise-loan-return button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(90, 18, 53, 0.35);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .customer-wise-loan-page {
+        padding: 25px 15px 40px;
+    }
+
+
+    .customer-wise-loan-heading h1 {
+        font-size: 25px;
+    }
+
+
+    .customer-wise-loan-heading p {
+        font-size: 13px;
+    }
+
+
+    .customer-wise-loan-search {
+        padding: 20px;
+    }
+
+
+    .customer-wise-loan-search-content {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .customer-wise-loan-search-content input {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    .customer-wise-loan-search-btn,
+    .customer-wise-loan-clear-btn {
+        width: 100%;
+    }
+
+
+    .customer-wise-loan-info {
+        flex-wrap: wrap;
+    }
+
+
+    .customer-wise-loan-return {
+        justify-content: center;
+    }
+
+}

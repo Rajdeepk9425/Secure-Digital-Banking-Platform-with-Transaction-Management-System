@@ -1,0 +1,398 @@
+/* =========================================================
+   CUSTOMER LOAN REQUEST VIEW
+   FINCORE DIGITAL BANKING MANAGEMENT PLATFORM
+   ========================================================= */
+
+.customer-loan-request-view-page {
+    min-height: calc(100vh - 78px);
+
+    padding: 40px 25px 60px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: linear-gradient(
+        135deg,
+        #fff7fb,
+        #f8eef4,
+        #f5e8ef
+    );
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.customer-loan-request-view-card {
+    width: 100%;
+    max-width: 650px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfd4da;
+
+    border-radius: 5px;
+
+    padding: 20px 25px 18px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 4px 15px rgba(59, 10, 34, 0.10);
+
+    animation: customerLoanViewAppear 0.35s ease;
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes customerLoanViewAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.customer-loan-request-view-card h2 {
+    margin: 0;
+
+    padding: 0 0 10px;
+
+    text-align: center;
+
+    color: #2f2f2f;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #e3e3e3;
+}
+
+
+/* =========================================================
+   DETAILS
+   ========================================================= */
+
+.customer-loan-details {
+    width: 100%;
+}
+
+
+/* =========================================================
+   ROW
+   ========================================================= */
+
+.customer-loan-row {
+    width: 100%;
+
+    min-height: 27px;
+
+    display: grid;
+
+    grid-template-columns: 52% 48%;
+
+    align-items: center;
+
+    border-bottom: 1px solid #eeeeee;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.customer-loan-label {
+    padding: 5px 8px 5px 5px;
+
+    color: #353535;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   VALUE
+   ========================================================= */
+
+.customer-loan-value {
+    padding: 5px 5px 5px 8px;
+
+    color: #333333;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   BUTTON AREA
+   ========================================================= */
+
+.loan-view-button-area {
+    display: flex;
+
+    justify-content: center;
+
+    padding-top: 20px;
+}
+
+
+/* =========================================================
+   RETURN BUTTON
+   ========================================================= */
+
+.loan-view-return-btn {
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    padding: 9px 18px;
+
+    border-radius: 5px;
+
+    background: linear-gradient(
+        135deg,
+        #f5b400,
+        #ffc928
+    );
+
+    color: #3b0a22;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 3px 8px rgba(245, 180, 0, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.loan-view-return-btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(245, 180, 0, 0.35);
+}
+
+
+.loan-view-return-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.loan-view-error {
+    padding: 25px 10px;
+
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .customer-loan-request-view-page {
+        padding: 25px 15px 40px;
+    }
+
+    .customer-loan-request-view-card {
+        max-width: 100%;
+
+        padding: 18px 16px 16px;
+    }
+
+    .customer-loan-request-view-card h2 {
+        font-size: 20px;
+    }
+
+    .customer-loan-row {
+        grid-template-columns: 50% 50%;
+    }
+
+    .customer-loan-label,
+    .customer-loan-value {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .customer-loan-request-view-page {
+        padding: 18px 10px 30px;
+    }
+
+    .customer-loan-request-view-card {
+        padding: 15px 12px;
+    }
+
+    .customer-loan-request-view-card h2 {
+        font-size: 18px;
+    }
+
+    .customer-loan-row {
+        grid-template-columns: 48% 52%;
+    }
+
+    .customer-loan-label {
+        padding: 5px 3px;
+    }
+
+    .customer-loan-value {
+        padding: 5px 3px;
+    }
+
+    .loan-view-return-btn {
+        padding: 8px 16px;
+
+        font-size: 12px;
+    }
+}
+
+/* =========================================================
+   BUTTON AREA
+   ========================================================= */
+
+.loan-view-button-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-top: 20px;
+}
+
+
+/* =========================================================
+   CONFIRM BUTTON
+   ========================================================= */
+
+.loan-view-confirm-btn {
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    padding: 9px 20px;
+
+    border-radius: 5px;
+
+    background: linear-gradient(
+        135deg,
+        #3b0a22,
+        #5a1235,
+        #7a1f45
+    );
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 3px 8px rgba(59, 10, 34, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.loan-view-confirm-btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(59, 10, 34, 0.35);
+}
+
+
+.loan-view-confirm-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   CONFIRM BUTTON DISABLED
+   ========================================================= */
+
+.loan-view-confirm-btn:disabled {
+    cursor: not-allowed;
+
+    opacity: 0.65;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   RETURN BUTTON DISABLED
+   ========================================================= */
+
+.loan-view-return-btn:disabled {
+    cursor: not-allowed;
+
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   PENDING STATUS
+   ========================================================= */
+
+.loan-status-pending {
+    font-weight: 700;
+
+    color: #b77900;
+}

@@ -1,0 +1,3723 @@
+/* =========================================================
+   FINCORE THEME
+   BURGUNDY + GOLD
+========================================================= */
+
+.fincore-page {
+    min-height: calc(100vh - 78px);
+    padding: 30px;
+    background: #FAF7F2;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.fincore-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.fincore-page-title {
+    margin: 0;
+
+    color: #5A1235;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.fincore-page-title::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 5px;
+    height: 30px;
+
+    margin-right: 12px;
+
+    vertical-align: middle;
+
+    background: #D4AF37;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.fincore-card {
+    background: #FFFFFF;
+
+    border-radius: 18px;
+
+    padding: 28px;
+
+    border: 1px solid #E8DCCB;
+
+    box-shadow:
+        0 8px 25px rgba(59, 10, 34, 0.08);
+
+    margin-bottom: 25px;
+
+    transition: 0.3s ease;
+}
+
+.fincore-card:hover {
+    box-shadow:
+        0 12px 32px rgba(59, 10, 34, 0.12);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.fincore-card-header {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding-bottom: 15px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #EDE3D5;
+}
+
+.fincore-card-header h3 {
+    margin: 0;
+
+    color: #5A1235;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.fincore-card-subtitle {
+    margin: 4px 0 0;
+
+    color: #8A777F;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.fincore-card-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FBF4E5;
+
+    color: #D4AF37;
+
+    font-size: 21px;
+
+    border: 1px solid #E8D8B0;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.fincore-form-group {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   FORM LABEL
+========================================================= */
+
+.fincore-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #5A1235;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   INPUT / SELECT
+========================================================= */
+
+.fincore-input,
+.fincore-select {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #DCCFC1;
+
+    border-radius: 10px;
+
+    color: #2F1722;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: all 0.25s ease;
+
+    box-sizing: border-box;
+}
+
+.fincore-input:focus,
+.fincore-select:focus {
+    border-color: #D4AF37;
+
+    box-shadow:
+        0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.fincore-input::placeholder {
+    color: #9B8C91;
+}
+
+
+/* =========================================================
+   READ ONLY INPUT
+========================================================= */
+
+.fincore-readonly {
+    background: #F7F2EB !important;
+
+    color: #7A1F45 !important;
+
+    font-weight: 600;
+
+    cursor: not-allowed;
+}
+
+.fincore-readonly:focus {
+    border-color: #DCCFC1;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   HELPER TEXT
+========================================================= */
+
+.fincore-helper {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #8A777F;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.fincore-error {
+    margin-top: 7px;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    background: #FBEAEA;
+
+    color: #A52A2A;
+
+    font-size: 13px;
+
+    border-left: 4px solid #B83232;
+}
+
+
+/* =========================================================
+   BUTTON GROUP
+========================================================= */
+
+.fincore-button-group {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 28px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #EDE3D5;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.fincore-btn-primary {
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        #5A1235,
+        #7A1F45
+    );
+
+    color: #FFFFFF;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.fincore-btn-primary:hover {
+    background: linear-gradient(
+        135deg,
+        #7A1F45,
+        #8F2854
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(90, 18, 53, 0.25);
+}
+
+
+/* =========================================================
+   GOLD BUTTON
+========================================================= */
+
+.fincore-btn-gold {
+    border: none;
+
+    background: #D4AF37;
+
+    color: #3B0A22;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.fincore-btn-gold:hover {
+    background: #F1D36B;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(212, 175, 55, 0.3);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.fincore-btn-secondary {
+    border: 1px solid #D4AF37;
+
+    background: transparent;
+
+    color: #5A1235;
+
+    padding: 11px 22px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.fincore-btn-secondary:hover {
+    background: #FBF4E5;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DEPOSIT BUTTON
+========================================================= */
+
+.fincore-btn-deposit {
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        #287A3E,
+        #3FA85A
+    );
+
+    color: #FFFFFF;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.fincore-btn-deposit:hover {
+    background: linear-gradient(
+        135deg,
+        #236B34,
+        #348F49
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(40, 122, 62, 0.25);
+}
+
+
+/* =========================================================
+   WITHDRAW BUTTON
+========================================================= */
+
+.fincore-btn-withdraw {
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        #7A1F45,
+        #A52A4F
+    );
+
+    color: #FFFFFF;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.fincore-btn-withdraw:hover {
+    background: linear-gradient(
+        135deg,
+        #5A1235,
+        #8B2348
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(122, 31, 69, 0.25);
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.fincore-status-active {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #E8F5E9;
+
+    color: #287A3E;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.fincore-status-pending {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #FFF4D6;
+
+    color: #8A6800;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.fincore-status-inactive {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #FBE7E7;
+
+    color: #A52A2A;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.fincore-table-container {
+    overflow-x: auto;
+
+    background: #FFFFFF;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(59, 10, 34, 0.08);
+}
+
+.fincore-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.fincore-table thead {
+    background: #5A1235;
+
+    color: #FFFFFF;
+}
+
+.fincore-table th {
+    padding: 14px 16px;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.fincore-table td {
+    padding: 14px 16px;
+
+    border-bottom: 1px solid #EEE5DA;
+
+    color: #3B2930;
+
+    font-size: 14px;
+}
+
+.fincore-table tbody tr {
+    transition: 0.2s ease;
+}
+
+.fincore-table tbody tr:hover {
+    background: #FBF6EC;
+}
+
+
+/* =========================================================
+   DASHBOARD STAT CARDS
+========================================================= */
+
+.fincore-stats {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.fincore-stat-card {
+    background: #FFFFFF;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    border: 1px solid #E8DCCB;
+
+    box-shadow:
+        0 7px 22px rgba(59, 10, 34, 0.07);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    transition: 0.3s ease;
+}
+
+.fincore-stat-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 28px rgba(59, 10, 34, 0.12);
+}
+
+.fincore-stat-icon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FBF4E5;
+
+    color: #D4AF37;
+
+    font-size: 24px;
+}
+
+.fincore-stat-card p {
+    margin: 0 0 5px;
+
+    color: #8A777F;
+
+    font-size: 13px;
+}
+
+.fincore-stat-card h2 {
+    margin: 0;
+
+    color: #5A1235;
+
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ALERT
+========================================================= */
+
+.fincore-alert {
+    padding: 14px 18px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+.fincore-alert-success {
+    background: #EAF6EC;
+
+    border-left: 4px solid #287A3E;
+
+    color: #236B34;
+}
+
+.fincore-alert-danger {
+    background: #FBEAEA;
+
+    border-left: 4px solid #B83232;
+
+    color: #8E2424;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+========================================================= */
+
+.fincore-success-message {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 25px;
+
+    padding: 15px 18px;
+
+    background: #FBF4E5;
+
+    border: 1px solid #E4D39B;
+
+    border-left: 5px solid #D4AF37;
+
+    border-radius: 12px;
+
+    color: #5A1235;
+}
+
+.success-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #D4AF37;
+
+    color: #3B0A22;
+
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+.fincore-success-message strong {
+    font-size: 14px;
+}
+
+.fincore-success-message p {
+    margin: 3px 0 0;
+
+    font-size: 13px;
+
+    color: #7A1F45;
+}
+
+
+/* =========================================================
+   CUSTOMER ENTRY
+========================================================= */
+
+.customer-form-card {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ACCOUNT ENTRY
+========================================================= */
+
+.account-form-card {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.fincore-money-input {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.fincore-money-input > span {
+    position: absolute;
+
+    left: 14px;
+
+    z-index: 2;
+
+    color: #D4AF37;
+
+    font-weight: 700;
+
+    font-size: 16px;
+}
+
+.fincore-money-input .fincore-input {
+    padding-left: 34px;
+
+    font-weight: 700;
+
+    color: #5A1235;
+}
+
+.fincore-status-box {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    border-radius: 20px;
+
+    background: #EAF6EC;
+
+    color: #287A3E;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    border: 1px solid #CBE6D0;
+}
+
+.fincore-status-dot {
+    width: 9px;
+    height: 9px;
+
+    background: #287A3E;
+
+    border-radius: 50%;
+
+    display: inline-block;
+}
+
+
+/* =========================================================
+   TRANSACTION ENTRY
+========================================================= */
+
+.transaction-form-card {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   DEPOSIT CARD
+========================================================= */
+
+.deposit-card {
+    border-top: 4px solid #287A3E;
+}
+
+
+/* =========================================================
+   WITHDRAW CARD
+========================================================= */
+
+.withdraw-card {
+    border-top: 4px solid #7A1F45;
+}
+
+
+/* =========================================================
+   TRANSACTION TYPE BOX
+========================================================= */
+
+.transaction-type-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    min-width: 130px;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   DEPOSIT TYPE
+========================================================= */
+
+.deposit-type {
+    background: #EAF6EC;
+
+    color: #287A3E;
+
+    border: 1px solid #CBE6D0;
+}
+
+
+/* =========================================================
+   WITHDRAW TYPE
+========================================================= */
+
+.withdraw-type {
+    background: #FBEAEA;
+
+    color: #A52A2A;
+
+    border: 1px solid #E7C3C3;
+}
+
+
+/* =========================================================
+   TRANSACTION TYPE ICON
+========================================================= */
+
+.transaction-type-icon {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 700;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   DEPOSIT ICON
+========================================================= */
+
+.transaction-deposit-icon {
+    background: #EAF6EC;
+
+    color: #287A3E;
+
+    border: 1px solid #CBE6D0;
+}
+
+
+/* =========================================================
+   WITHDRAW ICON
+========================================================= */
+
+.transaction-withdraw-icon {
+    background: #FBEAEA;
+
+    color: #A52A2A;
+
+    border: 1px solid #E7C3C3;
+}
+
+
+/* =========================================================
+   TRANSACTION AMOUNT
+========================================================= */
+
+.transaction-amount-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+.currency-symbol {
+    position: absolute;
+
+    left: 14px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 2;
+
+    color: #D4AF37;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    pointer-events: none;
+}
+
+.transaction-amount-input {
+    padding-left: 38px !important;
+
+    font-size: 17px !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TRANSACTION SUCCESS
+========================================================= */
+
+.transaction-success-message {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 25px;
+
+    padding: 15px 18px;
+
+    background: #EAF6EC;
+
+    border: 1px solid #CBE6D0;
+
+    border-left: 5px solid #287A3E;
+
+    border-radius: 12px;
+
+    color: #236B34;
+}
+
+
+/* =========================================================
+   TRANSACTION ERROR
+========================================================= */
+
+.fincore-transaction-error {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 25px;
+
+    padding: 15px 18px;
+
+    background: #FBEAEA;
+
+    border: 1px solid #E7C3C3;
+
+    border-left: 5px solid #B83232;
+
+    border-radius: 12px;
+
+    color: #7A1F45;
+}
+
+.transaction-error-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #B83232;
+
+    color: #FFFFFF;
+
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+.fincore-transaction-error strong {
+    display: block;
+
+    font-size: 14px;
+}
+
+.fincore-transaction-error p {
+    margin: 3px 0 0;
+
+    font-size: 13px;
+
+    color: #8A777F;
+}
+
+
+/* =========================================================
+   TRANSACTION REPORT
+========================================================= */
+
+.transaction-report-card {
+    width: 100%;
+
+    margin: 0 auto;
+
+    border-top: 4px solid #D4AF37;
+}
+
+.fincore-report-subtitle {
+    margin: 5px 0 0 18px;
+
+    color: #8A777F;
+
+    font-size: 14px;
+}
+
+.fincore-report-count {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 125px;
+
+    padding: 12px 18px;
+
+    background: #FBF4E5;
+
+    border: 1px solid #E4D39B;
+
+    border-radius: 12px;
+}
+
+.fincore-report-count span {
+    color: #8A777F;
+
+    font-size: 11px;
+
+    margin-bottom: 3px;
+}
+
+.fincore-report-count strong {
+    color: #5A1235;
+
+    font-size: 23px;
+}
+
+
+/* =========================================================
+   TRANSACTION BADGES
+========================================================= */
+
+.transaction-id {
+    color: #7A1F45;
+
+    font-weight: 600;
+}
+
+.transaction-badge {
+    display: inline-block;
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.transaction-deposit-badge {
+    background: #EAF6EC;
+
+    color: #287A3E;
+
+    border: 1px solid #CBE6D0;
+}
+
+.transaction-withdraw-badge {
+    background: #FBEAEA;
+
+    color: #A52A2A;
+
+    border: 1px solid #E7C3C3;
+}
+
+.transaction-credit {
+    color: #287A3E;
+
+    font-weight: 700;
+}
+
+.transaction-debit {
+    color: #A52A2A;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CUSTOMER TRANSACTION SUMMARY
+========================================================= */
+
+.fincore-customer-summary {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 22px;
+
+    padding: 18px 22px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E8DCCB;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 6px 20px rgba(59, 10, 34, 0.06);
+
+    flex-wrap: wrap;
+}
+
+.customer-summary-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #FBF4E5;
+
+    border: 1px solid #E4D39B;
+
+    font-size: 23px;
+}
+
+.customer-summary-details {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 130px;
+}
+
+.customer-summary-label {
+    color: #8A777F;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+    margin-bottom: 3px;
+}
+
+.customer-summary-details strong {
+    color: #5A1235;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   CUSTOMER REPORT
+========================================================= */
+
+.customer-report-card {
+    width: 100%;
+
+    margin: 0 auto;
+
+    border-top: 4px solid #D4AF37;
+}
+
+.customer-table {
+    min-width: 1250px;
+}
+
+.customer-table th {
+    white-space: nowrap;
+}
+
+.customer-table td {
+    vertical-align: middle;
+}
+
+.customer-id-badge {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    background: #FBF4E5;
+
+    color: #7A1F45;
+
+    border: 1px solid #E4D39B;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    font-size: 12px;
+}
+
+.customer-name-cell {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 170px;
+}
+
+.customer-avatar {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #5A1235,
+        #7A1F45
+    );
+
+    color: white;
+
+    font-weight: 700;
+
+    font-size: 14px;
+}
+
+.customer-name-cell strong {
+    color: #3B0A22;
+
+    font-size: 14px;
+}
+
+.customer-address {
+    display: block;
+
+    max-width: 180px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+.customer-username {
+    color: #7A1F45;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DELETE BUTTON
+========================================================= */
+
+.fincore-delete-btn {
+    border: 1px solid #E2BDBD;
+
+    background: #FBEAEA;
+
+    color: #A52A2A;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: all 0.25s ease;
+}
+
+.fincore-delete-btn:hover {
+    background: #B83232;
+
+    color: #FFFFFF;
+
+    border-color: #B83232;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 10px rgba(184, 50, 50, 0.20);
+}
+
+
+/* =========================================================
+   PENDING CUSTOMER
+========================================================= */
+
+.pending-customer-card {
+    width: 100%;
+
+    margin: 0 auto;
+
+    border-top: 4px solid #D4AF37;
+}
+
+.pending-customer-count {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 130px;
+
+    padding: 12px 18px;
+
+    background: #FBF4E5;
+
+    border: 1px solid #E4D39B;
+
+    border-radius: 12px;
+}
+
+.pending-customer-count span {
+    color: #8A777F;
+
+    font-size: 11px;
+
+    margin-bottom: 3px;
+}
+
+.pending-customer-count strong {
+    color: #5A1235;
+
+    font-size: 23px;
+}
+
+.pending-header-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #FFF4D6;
+
+    border: 1px solid #E4D39B;
+
+    color: #8A6800;
+
+    font-size: 21px;
+}
+
+.pending-customer-table {
+    min-width: 1300px;
+}
+
+.pending-customer-table td {
+    vertical-align: middle;
+}
+
+.pending-action-group {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    white-space: nowrap;
+}
+
+.pending-action-group a {
+    text-decoration: none;
+}
+
+.pending-accept-btn {
+    border: 1px solid #B7D9BE;
+
+    background: #EAF6EC;
+
+    color: #287A3E;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.pending-accept-btn:hover {
+    background: #287A3E;
+
+    color: #FFFFFF;
+
+    border-color: #287A3E;
+
+    transform: translateY(-1px);
+}
+
+.pending-reject-btn {
+    border: 1px solid #E2BDBD;
+
+    background: #FBEAEA;
+
+    color: #A52A2A;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.pending-reject-btn:hover {
+    background: #B83232;
+
+    color: #FFFFFF;
+
+    border-color: #B83232;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ACCOUNT REPORT
+========================================================= */
+
+.account-report-card {
+    width: 100%;
+
+    margin: 0 auto;
+
+    border-top: 4px solid #D4AF37;
+}
+
+.account-table {
+    min-width: 1100px;
+}
+
+.account-table td {
+    vertical-align: middle;
+}
+
+.account-number-badge {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 8px;
+
+    background: #FBF4E5;
+
+    border: 1px solid #E4D39B;
+
+    color: #7A1F45;
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+    letter-spacing: 0.4px;
+}
+
+.account-customer-id {
+    color: #5A1235;
+
+    font-weight: 600;
+}
+
+.account-type-badge {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    background: #F8F0F4;
+
+    border: 1px solid #E4CBD5;
+
+    border-radius: 9px;
+
+    color: #7A1F45;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.account-balance {
+    color: #287A3E;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   CUSTOMER EDIT
+========================================================= */
+
+.customer-edit-card {
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.approval-success-box {
+    background: #dcfce7;
+
+    border-left: 6px solid #16a34a;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin: 25px 0;
+}
+
+.approval-success-box h2 {
+    color: #15803d;
+}
+
+.approval-reject-box {
+    background: #fee2e2;
+
+    border-left: 6px solid #dc2626;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin: 25px 0;
+}
+
+.approval-reject-box h2 {
+    color: #dc2626;
+}
+
+.customer-details-box {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    background: #f8fafc;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+}
+
+.customer-details-box label {
+    font-weight: 600;
+
+    color: #475569;
+}
+
+.customer-details-box p {
+    margin-top: 8px;
+
+    font-size: 16px;
+
+    color: #111827;
+}
+
+
+/* =========================================================
+   CUSTOMER DETAILS PAGE
+========================================================= */
+
+.customer-details-page {
+    min-height: calc(100vh - 78px);
+
+    padding: 40px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #f8eef3,
+        #fff8fb
+    );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    box-sizing: border-box;
+}
+
+.customer-details-card {
+    width: 95%;
+
+    max-width: 1200px;
+
+    background: #ffffff;
+
+    padding: 35px 40px;
+
+    border-radius: 18px;
+
+    border-top: 6px solid #7A1F45;
+
+    box-shadow:
+        0 8px 25px rgba(59, 10, 34, 0.15);
+
+    box-sizing: border-box;
+}
+
+.customer-details-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #ead5df;
+}
+
+.customer-details-title {
+    margin: 0;
+
+    color: #5A1235;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+.customer-details-subtitle {
+    margin: 8px 0 0;
+
+    color: #777777;
+
+    font-size: 15px;
+}
+
+.customer-details-row {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: stretch;
+
+    gap: 18px;
+
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+.customer-detail-item {
+    flex: 1;
+
+    min-width: 0;
+
+    background: #fff8fb;
+
+    border: 1px solid #e8cbd8;
+
+    border-left: 5px solid #7A1F45;
+
+    border-radius: 10px;
+
+    padding: 16px 18px;
+
+    box-sizing: border-box;
+
+    transition: all 0.25s ease;
+}
+
+.customer-detail-item:hover {
+    transform: translateY(-2px);
+
+    border-left-color: #C49A3A;
+
+    box-shadow:
+        0 5px 15px rgba(90, 18, 53, 0.12);
+}
+
+.customer-detail-address {
+    flex: 2;
+}
+
+.customer-detail-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #7A1F45;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.6px;
+}
+
+.customer-detail-value {
+    display: block;
+
+    color: #333333;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    word-break: break-word;
+}
+
+.customer-details-return {
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #ead5df;
+}
+
+.customer-details-return button {
+    min-width: 160px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #5A1235,
+        #7A1F45
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(90, 18, 53, 0.25);
+
+    transition: all 0.25s ease;
+}
+
+.customer-details-return button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LOAN ADDITION
+========================================================= */
+
+.loan-addition-page {
+    min-height: 100vh;
+
+    background: #faf7f2;
+
+    padding: 35px 70px;
+
+    box-sizing: border-box;
+}
+
+.loan-addition-card {
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    padding: 35px 45px;
+
+    box-shadow:
+        0 8px 25px rgba(60, 30, 30, 0.12);
+
+    border-top: 6px solid #d6ad28;
+}
+
+.loan-addition-title {
+    color: #75133f;
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+
+    border-left: 5px solid #d6ad28;
+
+    padding-left: 15px;
+}
+
+.loan-addition-field {
+    margin-bottom: 22px;
+}
+
+.loan-addition-field label {
+    display: block;
+
+    color: #75133f;
+
+    font-weight: 700;
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.loan-addition-field input,
+.loan-addition-field select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 1px solid #ded5ce;
+
+    border-radius: 10px;
+
+    background: #fff;
+
+    color: #4d2638;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.loan-addition-field input:focus,
+.loan-addition-field select:focus {
+    border-color: #d6ad28;
+
+    box-shadow:
+        0 0 0 2px rgba(214, 173, 40, 0.15);
+}
+
+.loan-addition-field input[readonly] {
+    background: #f6f1eb;
+
+    color: #75133f;
+
+    font-weight: 600;
+}
+
+.loan-addition-field small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #977b83;
+
+    font-size: 13px;
+}
+
+.loan-addition-buttons {
+    display: flex;
+
+    gap: 14px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e8ddd4;
+}
+
+.loan-add-btn {
+    border-radius: 10px;
+
+    padding: 14px 25px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.save-loan-btn {
+    background: #75133f;
+
+    color: white;
+
+    border: 1px solid #75133f;
+}
+
+.save-loan-btn:hover {
+    background: #5e1033;
+}
+
+.reset-loan-btn {
+    background: #d6ad28;
+
+    color: #321c1c;
+
+    border: 1px solid #d6ad28;
+}
+
+.reset-loan-btn:hover {
+    background: #c49d20;
+}
+
+.return-loan-btn {
+    background: white;
+
+    color: #75133f;
+
+    border: 1px solid #d6ad28;
+}
+
+.return-loan-btn:hover {
+    background: #fff8df;
+}
+
+
+/* =========================================================
+   LOAN REPORT
+========================================================= */
+
+.loan-report-page {
+    min-height: calc(100vh - 78px);
+
+    padding: 35px;
+
+    background: linear-gradient(
+        135deg,
+        #fff8fb,
+        #f8edf3
+    );
+
+    box-sizing: border-box;
+}
+
+.loan-report-heading {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.loan-report-heading h1 {
+    margin: 0;
+
+    color: #5a1235;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+.loan-report-heading p {
+    margin-top: 8px;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+.loan-report-table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(59, 10, 34, 0.15);
+}
+
+.loan-report-table {
+    width: 100%;
+
+    min-width: 1400px;
+
+    border-collapse: collapse;
+}
+
+.loan-report-table thead {
+    background: linear-gradient(
+        135deg,
+        #3b0a22,
+        #5a1235,
+        #7a1f45
+    );
+}
+
+.loan-report-table th {
+    padding: 16px 14px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+.loan-report-table td {
+    padding: 15px 12px;
+
+    text-align: center;
+
+    color: #333;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #eee;
+
+    white-space: nowrap;
+}
+
+.loan-report-table tbody tr:hover {
+    background: #fff4f8;
+}
+
+.customer-loan-id-badge {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    background: #f4e3ec;
+
+    color: #5a1235;
+
+    font-weight: 700;
+}
+
+.loan-id-badge {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    background: #eee5f7;
+
+    color: #5a286e;
+
+    font-weight: 700;
+}
+
+.account-id-badge {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    background: #fff0d6;
+
+    color: #8a5a00;
+
+    font-weight: 700;
+}
+
+.loan-status-approved {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: #dff5e5;
+
+    color: #16743a;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   LOAN ADD AMOUNT BUTTON
+========================================================= */
+
+.loan-report-table .loan-add-amount-btn {
+    display: inline-flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 190px;
+
+    min-height: 42px;
+
+    padding: 10px 16px !important;
+
+    background: linear-gradient(
+        135deg,
+        #198754,
+        #20c997
+    ) !important;
+
+    color: #ffffff !important;
+
+    border: none !important;
+
+    border-radius: 8px !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 4px 10px rgba(25, 135, 84, 0.25);
+
+    transition: all 0.25s ease;
+}
+
+.loan-report-table .loan-add-amount-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #157347,
+        #198754
+    ) !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(25, 135, 84, 0.35);
+}
+
+.loan-report-table .loan-amount-added {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 150px;
+
+    padding: 10px 14px;
+
+    background: #e8f7ee;
+
+    color: #198754;
+
+    border: 1px solid #a8dfbd;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   APPLY LOAN BUTTON
+========================================================= */
+
+.apply-loan-btn {
+    border: none;
+
+    background: linear-gradient(
+        135deg,
+        #5A1235,
+        #7A1F45
+    );
+
+    color: #ffffff;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 4px 10px rgba(90, 18, 53, 0.25);
+
+    transition: all 0.25s ease;
+}
+
+.apply-loan-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #7A1F45,
+        #9A2857
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(90, 18, 53, 0.35);
+}
+
+
+/* =========================================================
+   LOAN REPORT RETURN
+========================================================= */
+
+.loan-report-return {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 25px;
+}
+
+.loan-report-return button {
+    padding: 12px 28px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #5a1235,
+        #7a1f45
+    );
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(90, 18, 53, 0.25);
+
+    transition: 0.2s ease;
+}
+
+.loan-report-return button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.loan-report-empty {
+    max-width: 500px;
+
+    margin: 70px auto;
+
+    padding: 45px 30px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(59, 10, 34, 0.12);
+}
+
+.loan-empty-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.loan-report-empty h2 {
+    color: #5a1235;
+
+    margin-bottom: 8px;
+}
+
+.loan-report-empty p {
+    color: #777;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.loan-report-message {
+    text-align: center;
+
+    margin: 70px auto;
+
+    color: #5a1235;
+}
+
+.loan-report-spinner {
+    width: 40px;
+    height: 40px;
+
+    margin: 0 auto 15px;
+
+    border: 4px solid #ead4df;
+
+    border-top: 4px solid #5a1235;
+
+    border-radius: 50%;
+
+    animation:
+        loanReportSpin 0.8s linear infinite;
+}
+
+@keyframes loanReportSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.loan-report-error {
+    max-width: 500px;
+
+    margin: 60px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(59, 10, 34, 0.12);
+}
+
+.loan-report-error p {
+    color: #a32222;
+
+    margin-bottom: 20px;
+}
+
+.loan-report-error button {
+    padding: 10px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #5a1235;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1000px
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .fincore-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fincore-page {
+        padding: 20px;
+    }
+
+    .customer-table {
+        min-width: 1250px;
+    }
+
+    .account-table {
+        min-width: 1100px;
+    }
+
+    .pending-customer-table {
+        min-width: 1300px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .fincore-page {
+        padding: 20px 15px;
+    }
+
+    .fincore-card {
+        padding: 22px;
+    }
+
+    .fincore-page-title {
+        font-size: 24px;
+    }
+
+    .fincore-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .transaction-form-card {
+        width: 100%;
+    }
+
+    .loan-report-page {
+        padding: 20px;
+    }
+
+    .loan-report-heading h1 {
+        font-size: 24px;
+    }
+
+    .loan-report-table {
+        min-width: 1000px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .fincore-page {
+        padding: 15px;
+    }
+
+    .fincore-card {
+        padding: 20px;
+    }
+
+    .fincore-page-title {
+        font-size: 22px;
+    }
+
+    .fincore-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .fincore-page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .fincore-button-group {
+        flex-direction: column;
+    }
+
+    .fincore-button-group button {
+        width: 100%;
+    }
+
+    .transaction-type-box {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .customer-details-row {
+        flex-direction: column;
+    }
+
+    .customer-details-card {
+        width: 100%;
+
+        padding: 25px 18px;
+    }
+
+    .customer-details-title {
+        font-size: 24px;
+    }
+
+    .customer-details-return {
+        justify-content: center;
+    }
+
+    .customer-details-return button {
+        width: 100%;
+    }
+
+    .loan-report-page {
+        padding: 15px;
+    }
+
+    .loan-report-heading h1 {
+        font-size: 21px;
+    }
+
+    .loan-report-return {
+        justify-content: center;
+    }
+
+    .loan-report-return button {
+        width: 100%;
+    }
+
+    .loan-addition-page {
+        padding: 20px 12px;
+    }
+
+    .loan-addition-card {
+        padding: 25px 18px;
+    }
+
+    .loan-addition-buttons {
+        flex-direction: column;
+    }
+
+    .loan-add-btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .fincore-page {
+        padding: 12px;
+    }
+
+    .fincore-card {
+        padding: 17px;
+    }
+
+    .fincore-card-header {
+        align-items: flex-start;
+    }
+
+    .fincore-card-header h3 {
+        font-size: 18px;
+    }
+
+    .fincore-card-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 19px;
+    }
+
+    .fincore-input,
+    .fincore-select {
+        font-size: 14px;
+
+        padding: 11px 12px;
+    }
+
+    .transaction-amount-input {
+        font-size: 16px !important;
+    }
+
+    .transaction-type-box {
+        min-width: 0;
+    }
+}
+
+/* =========================================
+   FINCORE CUSTOMER REPORT
+   BURGUNDY + GOLD THEME
+   ========================================= */
+
+.fincore-page {
+    min-height: 100vh;
+    padding: 30px 40px;
+    background: #f7f3ef;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   PAGE HEADER
+   ========================================= */
+
+.fincore-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.fincore-page-title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #5a1020;
+}
+
+.fincore-report-subtitle {
+    margin: 7px 0 0;
+    color: #7b6b6e;
+    font-size: 15px;
+}
+
+/* =========================================
+   TOTAL CUSTOMER COUNT
+   ========================================= */
+
+.fincore-report-count {
+    min-width: 150px;
+    padding: 15px 22px;
+    background: #ffffff;
+    border: 1px solid #e1c98a;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(90, 16, 32, 0.08);
+}
+
+.fincore-report-count span {
+    display: block;
+    font-size: 13px;
+    color: #7b6b6e;
+    margin-bottom: 5px;
+}
+
+.fincore-report-count strong {
+    display: block;
+    font-size: 25px;
+    color: #a67c00;
+}
+
+/* =========================================
+   MAIN CARD
+   ========================================= */
+
+.fincore-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e5d5ad;
+    box-shadow: 0 8px 25px rgba(90, 16, 32, 0.08);
+    overflow: hidden;
+}
+
+.customer-report-card {
+    width: 100%;
+}
+
+/* =========================================
+   CARD HEADER
+   ========================================= */
+
+.fincore-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 25px;
+    border-bottom: 1px solid #eadfca;
+    background: #fffdf9;
+}
+
+.fincore-card-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5e7c1;
+    border: 1px solid #dfc27b;
+    border-radius: 12px;
+    font-size: 24px;
+}
+
+.fincore-card-header h3 {
+    margin: 0;
+    color: #5a1020;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fincore-card-subtitle {
+    margin: 4px 0 0;
+    color: #7b6b6e;
+    font-size: 13px;
+}
+
+/* =========================================
+   TABLE CONTAINER
+   ========================================= */
+
+.fincore-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* =========================================
+   CUSTOMER TABLE
+   ========================================= */
+
+.fincore-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1100px;
+}
+
+.customer-table thead {
+    background: #5a1020;
+}
+
+.customer-table th {
+    padding: 16px 15px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    color: #f7df9b;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-bottom: 3px solid #c9a227;
+    white-space: nowrap;
+}
+
+.customer-table td {
+    padding: 16px 15px;
+    color: #49383b;
+    font-size: 14px;
+    border-bottom: 1px solid #eee5d5;
+    vertical-align: middle;
+}
+
+/* =========================================
+   TABLE ROW
+   ========================================= */
+
+.customer-table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.customer-table tbody tr:hover {
+    background: #fff9eb;
+}
+
+.customer-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================
+   CUSTOMER ID
+   ========================================= */
+
+.customer-id-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #f7edcf;
+    color: #8a6800;
+    border: 1px solid #e1c77d;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* =========================================
+   CUSTOMER NAME
+   ========================================= */
+
+.customer-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 170px;
+}
+
+.customer-avatar {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #5a1020;
+    border: 2px solid #c9a227;
+    color: #f7df9b;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.customer-name-cell strong {
+    color: #5a1020;
+    font-size: 14px;
+}
+
+/* =========================================
+   ADDRESS
+   ========================================= */
+
+.customer-address {
+    display: inline-block;
+    max-width: 160px;
+    line-height: 1.4;
+    color: #635356;
+}
+
+/* =========================================
+   USERNAME
+   ========================================= */
+
+.customer-username {
+    display: inline-block;
+    padding: 5px 9px;
+    background: #f7f1e4;
+    color: #6d565b;
+    border: 1px solid #e5d7b8;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+/* =========================================
+   STATUS
+   ========================================= */
+
+.fincore-status-active,
+.fincore-status-pending,
+.fincore-status-inactive {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Active - Burgundy/Gold */
+
+.fincore-status-active {
+    background: #f4e6c1;
+    color: #806000;
+    border: 1px solid #d8bb69;
+}
+
+/* Pending */
+
+.fincore-status-pending {
+    background: #fff0cf;
+    color: #9a6700;
+    border: 1px solid #e3c27a;
+}
+
+/* Inactive */
+
+.fincore-status-inactive {
+    background: #f4dddd;
+    color: #8b1e2d;
+    border: 1px solid #d7a6ad;
+}
+
+/* =========================================
+   DELETE BUTTON
+   ========================================= */
+
+.fincore-delete-btn {
+    border: none;
+    outline: none;
+    padding: 8px 13px;
+    background: #f4dddd;
+    color: #8b1e2d;
+    border: 1px solid #dfb4bb;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.fincore-delete-btn:hover {
+    background: #8b1e2d;
+    color: #ffffff;
+    border-color: #8b1e2d;
+    transform: translateY(-1px);
+}
+
+.fincore-delete-btn:active {
+    transform: translateY(0);
+}
+
+/* =========================================
+   EMPTY STATE
+   ========================================= */
+
+.fincore-empty-state {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.empty-state-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5e7c1;
+    border: 1px solid #dfc27b;
+    border-radius: 50%;
+    font-size: 34px;
+}
+
+.fincore-empty-state h3 {
+    margin: 0 0 8px;
+    color: #5a1020;
+    font-size: 20px;
+}
+
+.fincore-empty-state p {
+    margin: 0;
+    color: #7b6b6e;
+    font-size: 14px;
+}
+
+/* =========================================
+   REPORT ACTIONS
+   ========================================= */
+
+.fincore-report-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 25px;
+    border-top: 1px solid #eadfca;
+    background: #fcfaf5;
+}
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.fincore-btn-secondary {
+    padding: 10px 18px;
+    border: 1px solid #c9a227;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #5a1020;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.fincore-btn-secondary:hover {
+    background: #5a1020;
+    border-color: #5a1020;
+    color: #f7df9b;
+}
+
+.fincore-btn-secondary:active {
+    transform: scale(0.98);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .fincore-page {
+        padding: 20px;
+    }
+
+    .fincore-page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fincore-report-count {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .fincore-table-container {
+        overflow-x: auto;
+    }
+
+    .fincore-card-header {
+        padding: 18px;
+    }
+
+    .fincore-report-actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .fincore-page {
+        padding: 15px;
+    }
+
+    .fincore-page-title {
+        font-size: 24px;
+    }
+
+    .fincore-report-subtitle {
+        font-size: 13px;
+    }
+
+    .fincore-card {
+        border-radius: 12px;
+    }
+
+    .fincore-card-header {
+        gap: 10px;
+    }
+
+    .fincore-card-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+
+    .fincore-card-header h3 {
+        font-size: 17px;
+    }
+
+    .fincore-report-actions {
+        padding: 15px;
+    }
+
+    .fincore-btn-secondary {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   FINCORE - CUSTOMER LOAN ENTRY
+   BURGUNDY + GOLD THEME
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.customer-loan-entry-page {
+    min-height: 100vh;
+    padding: 35px 20px;
+    background:
+        linear-gradient(
+            135deg,
+            #f8f1f2 0%,
+            #fffaf0 50%,
+            #f5e8ea 100%
+        );
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.customer-loan-entry-card {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #ead6b5;
+    border-radius: 18px;
+    box-shadow:
+        0 10px 35px rgba(91, 24, 35, 0.12);
+    padding: 35px 40px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.customer-loan-entry-title {
+    margin: 0;
+    color: #6b1e2b;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.customer-loan-entry-card > p {
+    margin: 10px 0 30px;
+    text-align: center;
+    color: #7a6a5a;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.customer-loan-entry-card form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   FORM FIELD
+   ========================================================= */
+
+.customer-loan-field {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.customer-loan-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #5b1823;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   INPUT + SELECT
+   ========================================================= */
+
+.customer-loan-field input,
+.customer-loan-field select {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    box-sizing: border-box;
+
+    border: 1px solid #d8c3a5;
+    border-radius: 8px;
+
+    background: #fffdf9;
+    color: #3f3030;
+
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+   ========================================================= */
+
+.customer-loan-field input:focus,
+.customer-loan-field select:focus {
+    border-color: #b68a2c;
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(182, 138, 44, 0.15);
+}
+
+
+/* =========================================================
+   READONLY INPUT
+   ========================================================= */
+
+.customer-loan-field input[readonly] {
+    background: #f8f1f2;
+    color: #6b1e2b;
+    font-weight: 600;
+    cursor: default;
+}
+
+
+/* =========================================================
+   LOAN ID / CUSTOMER LOAN ID
+   ========================================================= */
+
+.customer-loan-field input[readonly]:focus {
+    border-color: #d8c3a5;
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   SELECT
+   ========================================================= */
+
+.customer-loan-field select {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   SMALL INFORMATION TEXT
+   ========================================================= */
+
+.customer-loan-field small {
+    display: block;
+    margin-top: 7px;
+    color: #8a7560;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.customer-loan-error {
+    margin-top: 7px !important;
+    padding: 9px 12px;
+
+    background: #fff1f2;
+    border-left: 4px solid #a3263b;
+
+    border-radius: 6px;
+
+    color: #a3263b !important;
+    font-size: 13px !important;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   AMOUNT FIELD
+   ========================================================= */
+
+.customer-loan-field input[type="number"] {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BUTTON CONTAINER
+   ========================================================= */
+
+.customer-loan-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    margin-top: 32px;
+    padding-top: 25px;
+
+    border-top: 1px solid #eadcc7;
+}
+
+
+/* =========================================================
+   COMMON BUTTON
+   ========================================================= */
+
+.loan-btn {
+    min-width: 135px;
+    height: 44px;
+
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* =========================================================
+   SAVE BUTTON
+   ========================================================= */
+
+.save-btn {
+    background: #6b1e2b;
+    color: #ffffff;
+
+    box-shadow:
+        0 5px 12px rgba(107, 30, 43, 0.22);
+}
+
+
+.save-btn:hover {
+    background: #52151f;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(107, 30, 43, 0.28);
+}
+
+
+.save-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESET BUTTON
+   ========================================================= */
+
+.reset-btn {
+    background: #b68a2c;
+    color: #ffffff;
+
+    box-shadow:
+        0 5px 12px rgba(182, 138, 44, 0.22);
+}
+
+
+.reset-btn:hover {
+    background: #98701f;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(182, 138, 44, 0.28);
+}
+
+
+.reset-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.back-btn {
+    background: #ffffff;
+    color: #6b1e2b;
+
+    border: 1px solid #c9ad7a;
+
+    box-shadow: none;
+}
+
+
+.back-btn:hover {
+    background: #f8f1f2;
+    border-color: #6b1e2b;
+
+    transform: translateY(-2px);
+}
+
+
+.back-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   DISABLED BUTTON
+   ========================================================= */
+
+.loan-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================================================
+   INPUT NUMBER ARROWS
+   ========================================================= */
+
+.customer-loan-field input[type="number"]::-webkit-inner-spin-button,
+.customer-loan-field input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
+.customer-loan-field input::placeholder {
+    color: #a89989;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .customer-loan-entry-page {
+        padding: 25px 15px;
+    }
+
+
+    .customer-loan-entry-card {
+        padding: 30px 25px;
+        border-radius: 15px;
+    }
+
+
+    .customer-loan-entry-title {
+        font-size: 26px;
+    }
+
+
+    .customer-loan-buttons {
+        flex-wrap: wrap;
+    }
+
+
+    .loan-btn {
+        flex: 1;
+        min-width: 120px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .customer-loan-entry-page {
+        padding: 15px 10px;
+    }
+
+
+    .customer-loan-entry-card {
+        padding: 25px 18px;
+        border-radius: 12px;
+    }
+
+
+    .customer-loan-entry-title {
+        font-size: 23px;
+    }
+
+
+    .customer-loan-entry-card > p {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+
+
+    .customer-loan-field {
+        margin-bottom: 17px;
+    }
+
+
+    .customer-loan-field label {
+        font-size: 13px;
+    }
+
+
+    .customer-loan-field input,
+    .customer-loan-field select {
+        height: 44px;
+        font-size: 13px;
+    }
+
+
+    .customer-loan-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+
+    .loan-btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+}
+
+
+/* =========================================================
+   GOLD DIVIDER EFFECT
+   ========================================================= */
+
+.customer-loan-entry-card::before {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin: -35px auto 25px;
+
+    background: #b68a2c;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   SELECTED / HOVER EFFECT
+   ========================================================= */
+
+.customer-loan-field select:hover {
+    border-color: #b68a2c;
+}
+
+
+/* =========================================================
+   SAVINGS ACCOUNT SELECT
+   ========================================================= */
+
+.customer-loan-field select option {
+    background: #ffffff;
+    color: #3f3030;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.loan-btn:focus-visible {
+    outline: 3px solid rgba(182, 138, 44, 0.35);
+    outline-offset: 2px;
+}

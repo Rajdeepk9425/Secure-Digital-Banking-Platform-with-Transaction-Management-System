@@ -1,0 +1,344 @@
+.admin-credit-page {
+
+    min-height: 100vh;
+
+    padding: 45px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8fb,
+            #f8edf3,
+            #fff
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+}
+
+
+.admin-credit-card {
+
+    width: 100%;
+
+    max-width: 800px;
+
+    background: white;
+
+    padding: 35px 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(59, 10, 34, 0.15);
+
+    border:
+        1px solid #ead3df;
+
+}
+
+
+.admin-credit-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding-bottom: 25px;
+
+    margin-bottom: 25px;
+
+    border-bottom:
+        2px solid #f0dce6;
+
+}
+
+
+.admin-credit-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    font-size: 32px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #087f5b,
+            #12a36f
+        );
+
+}
+
+
+.admin-credit-header h1 {
+
+    margin: 0;
+
+    color: #3b0a22;
+
+    font-size: 28px;
+
+}
+
+
+.admin-credit-header p {
+
+    margin: 6px 0 0;
+
+    color: #777;
+
+}
+
+
+.admin-credit-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+.admin-credit-field {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.admin-credit-field label {
+
+    color: #3b0a22;
+
+    font-weight: 600;
+
+}
+
+
+.admin-credit-field input,
+.admin-credit-field select {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border:
+        1px solid #d9c2cf;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+
+.admin-credit-field input:focus,
+.admin-credit-field select:focus {
+
+    border-color: #087f5b;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(8, 127, 91, 0.10);
+
+}
+
+
+.admin-credit-balance {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 20px;
+
+    border-radius: 12px;
+
+    background: #f0faf6;
+
+    border:
+        1px solid #b8e6d2;
+
+}
+
+
+.admin-credit-balance span {
+
+    color: #555;
+
+}
+
+
+.admin-credit-balance strong {
+
+    color: #087f5b;
+
+    font-size: 22px;
+
+}
+
+
+.admin-credit-preview {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 17px 20px;
+
+    border-radius: 10px;
+
+    background: #eaf8f2;
+
+    border:
+        1px solid #b8e6d2;
+
+    color: #087f5b;
+
+}
+
+
+.admin-credit-preview strong {
+
+    font-size: 20px;
+
+}
+
+
+.admin-credit-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.admin-credit-buttons button {
+
+    min-height: 45px;
+
+    padding:
+        11px 20px;
+
+    border-radius: 9px;
+
+    border: none;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.admin-credit-buttons button:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.admin-credit-submit {
+
+    background:
+        linear-gradient(
+            135deg,
+            #087f5b,
+            #12a36f
+        );
+
+    color: white;
+
+}
+
+
+.admin-credit-reset {
+
+    background: #f4e8ee;
+
+    color: #5a1235;
+
+    border:
+        1px solid #dfc3d1 !important;
+
+}
+
+
+.admin-credit-return {
+
+    background:
+        linear-gradient(
+            135deg,
+            #3b0a22,
+            #7a1f45
+        );
+
+    color: white;
+
+}
+
+
+@media (max-width: 700px) {
+
+    .admin-credit-page {
+
+        padding: 25px 15px;
+
+    }
+
+    .admin-credit-card {
+
+        padding: 25px 20px;
+
+    }
+
+    .admin-credit-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .admin-credit-buttons button {
+
+        width: 100%;
+
+    }
+
+}

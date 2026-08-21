@@ -1,0 +1,378 @@
+
+.account-filter-box{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:25px 0;
+
+    padding:20px;
+
+    background:#FBF6EC;
+
+    border-radius:16px;
+
+    border:1px solid #E8DCCB;
+
+}
+
+
+
+.account-filter-box input,
+.account-filter-box select{
+
+
+    padding:12px 15px;
+
+    border-radius:10px;
+
+    border:1px solid #DCCBA5;
+
+    outline:none;
+
+    font-size:14px;
+
+    min-width:200px;
+
+    color:#3B0A22;
+
+
+}
+
+
+
+.account-filter-box input:focus,
+.account-filter-box select:focus{
+
+
+    border-color:#D4AF37;
+
+    box-shadow:0 0 5px rgba(212,175,55,.4);
+
+
+}
+
+
+.filter-search-btn{
+
+
+    background:#5A1235;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+.filter-search-btn:hover{
+
+
+    background:#7A1F45;
+
+    transform:translateY(-2px);
+
+
+}
+
+
+.filter-reset-btn{
+
+
+    background:#D4AF37;
+
+    color:#3B0A22;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+.filter-reset-btn:hover{
+
+
+    background:#F1D36B;
+
+    transform:translateY(-2px);
+
+
+}
+
+
+
+.account-summary{
+
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+.account-summary div{
+
+
+    flex:1;
+
+    min-width:220px;
+
+
+    background:white;
+
+
+    padding:20px;
+
+
+    border-radius:16px;
+
+
+    border-left:4px solid #D4AF37;
+
+
+    box-shadow:
+
+    0 6px 18px rgba(59,10,34,.08);
+
+
+}
+
+
+
+.account-summary span{
+
+
+    display:block;
+
+    color:#8A777F;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+
+}
+
+
+
+.account-summary strong{
+
+
+    display:block;
+
+    margin-top:8px;
+
+
+    color:#5A1235;
+
+    font-size:24px;
+
+    font-weight:700;
+
+
+}
+
+
+
+.total-balance{
+
+
+    color:#087A3B !important;
+
+
+}
+
+
+.account-number-badge{
+
+
+    background:#FBF4E5;
+
+
+    color:#7A1F45;
+
+
+    padding:7px 12px;
+
+
+    border-radius:8px;
+
+
+    border:1px solid #E4D39B;
+
+
+    font-weight:700;
+
+
+    font-size:13px;
+
+
+}
+
+
+.account-customer-id{
+
+
+    color:#5A1235;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+.account-type-badge{
+
+
+    background:#F5EAF0;
+
+
+    color:#7A1F45;
+
+
+    padding:7px 12px;
+
+
+    border-radius:20px;
+
+
+    font-size:13px;
+
+
+    font-weight:700;
+
+
+}
+
+
+.account-table .account-balance{
+
+
+    color:#087A3B;
+
+
+    font-weight:700;
+
+
+}
+
+
+.fincore-delete-btn{
+
+
+    background:#FBEAEA;
+
+
+    color:#A52A2A;
+
+
+    border:1px solid #E2BDBD;
+
+
+    padding:8px 14px;
+
+
+    border-radius:8px;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.fincore-delete-btn:hover{
+
+
+    background:#B83232;
+
+
+    color:white;
+
+
+    transform:translateY(-2px);
+
+
+}
+
+
+@media(max-width:900px){
+
+
+.account-filter-box{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.account-filter-box input,
+.account-filter-box select,
+.filter-search-btn,
+.filter-reset-btn{
+
+
+    width:100%;
+
+
+}
+
+
+
+.account-summary{
+
+
+    flex-direction:column;
+
+
+}
+
+
+}

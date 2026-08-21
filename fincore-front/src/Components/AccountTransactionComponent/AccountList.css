@@ -1,0 +1,724 @@
+/* =========================================================
+   ACCOUNT LIST PAGE
+   FINCORE - BURGUNDY & GOLD THEME
+   ========================================================= */
+
+.account-list-page {
+    min-height: 100vh;
+    padding: 28px 40px 50px;
+
+    background: linear-gradient(
+        135deg,
+        #faf7f3,
+        #f7f2ed,
+        #f5eee8
+    );
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.account-list-card {
+    width: 100%;
+    max-width: 1820px;
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e7c987;
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(83, 20, 48, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.account-list-header {
+    min-height: 150px;
+
+    padding: 30px 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #fffdfa;
+
+    border-bottom: 1px solid #ead8b1;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER TITLE
+   ========================================================= */
+
+.account-list-header h1 {
+    margin: 0 0 8px;
+
+    padding-left: 18px;
+
+    position: relative;
+
+    color: #651136;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* Gold vertical line */
+
+.account-list-header h1::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 2px;
+
+    width: 6px;
+    height: 38px;
+
+    border-radius: 5px;
+
+    background: #d4a72c;
+}
+
+
+/* Subtitle */
+
+.account-list-header p {
+    margin: 0;
+
+    color: #725d66;
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   ACCOUNT COUNT
+   ========================================================= */
+
+.account-count {
+    min-width: 150px;
+    height: 92px;
+
+    padding: 14px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e1c47d;
+    border-radius: 16px;
+
+    color: #9b7300;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 15px rgba(94, 25, 52, 0.06);
+}
+
+
+.account-count span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #795d67;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+   ========================================================= */
+
+.account-table-wrapper {
+    margin: 24px 34px 0;
+
+    overflow-x: auto;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 6px 20px rgba(82, 20, 48, 0.08);
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.account-list-table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background: #ffffff;
+
+    color: #541126;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.account-list-table thead th {
+    padding: 20px 14px;
+
+    background: linear-gradient(
+        135deg,
+        #691238,
+        #7b1945
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.3px;
+
+    border-bottom: 3px solid #d5a72d;
+
+    white-space: nowrap;
+}
+
+
+/* First header */
+
+.account-list-table thead th:first-child {
+    border-top-left-radius: 12px;
+}
+
+
+/* Last header */
+
+.account-list-table thead th:last-child {
+    border-top-right-radius: 12px;
+}
+
+
+/* =========================================================
+   TABLE BODY
+   ========================================================= */
+
+.account-list-table tbody tr {
+    background: #ffffff;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.account-list-table tbody tr:hover {
+    background: #fffaf1;
+}
+
+
+/* =========================================================
+   TABLE CELLS
+   ========================================================= */
+
+.account-list-table tbody td {
+    padding: 18px 14px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eee5df;
+
+    color: #5e3d4a;
+
+    white-space: nowrap;
+}
+
+
+/* Last row */
+
+.account-list-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   ACCOUNT NUMBER
+   ========================================================= */
+
+.account-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 95px;
+
+    padding: 10px 14px;
+
+    background: #fff4d9;
+
+    border: 1px solid #e4c36d;
+
+    border-radius: 9px;
+
+    color: #805e00;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CUSTOMER NAME
+   ========================================================= */
+
+.account-list-table td strong:not(.account-number) {
+    color: #641035;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ACCOUNT TYPE BADGES
+   ========================================================= */
+
+.account-type-badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 125px;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* Savings */
+
+.savings-account-type {
+    background: #fdf2d3;
+
+    border: 1px solid #e4c46e;
+
+    color: #866400;
+}
+
+
+/* Current */
+
+.current-account-type {
+    background: #f5e8ef;
+
+    border: 1px solid #d8a5bb;
+
+    color: #75153e;
+}
+
+
+/* Loan */
+
+.loan-account-type {
+    background: #eee5f4;
+
+    border: 1px solid #cbb3d9;
+
+    color: #65367a;
+}
+
+
+/* Other */
+
+.other-account-type {
+    background: #f3eeee;
+
+    border: 1px solid #d9caca;
+
+    color: #66535a;
+}
+
+
+/* =========================================================
+   BALANCE
+   ========================================================= */
+
+.account-balance {
+    color: #651136 !important;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.active-status,
+.inactive-status {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 90px;
+
+    padding: 9px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* Active */
+
+.active-status {
+    background: #fff1c9;
+
+    border: 1px solid #e2bd57;
+
+    color: #795800;
+}
+
+
+/* Inactive */
+
+.inactive-status {
+    background: #f9e4e4;
+
+    border: 1px solid #e3b1b1;
+
+    color: #a32929;
+}
+
+
+/* =========================================================
+   DELETE BUTTON
+   ========================================================= */
+
+.account-delete-btn {
+    min-width: 102px;
+
+    padding: 10px 15px;
+
+    background: #fff0f0;
+
+    border: 1px solid #e5b2b2;
+
+    border-radius: 9px;
+
+    color: #a12525;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.account-delete-btn:hover {
+    background: #a12525;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 10px rgba(161, 37, 37, 0.18);
+}
+
+
+.account-delete-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   EMPTY ROW
+   ========================================================= */
+
+.account-empty-row {
+    height: 130px;
+
+    color: #806d76 !important;
+
+    font-size: 16px !important;
+
+    font-weight: 500;
+
+    text-align: center !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.account-list-footer {
+    min-height: 100px;
+
+    padding: 24px 34px;
+
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    background: #fffdfa;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.fincore-btn-secondary {
+    padding: 14px 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #d5a72d;
+
+    border-radius: 10px;
+
+    color: #651136;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.fincore-btn-secondary:hover {
+    background: #651136;
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 14px rgba(101, 17, 54, 0.18);
+}
+
+
+.fincore-btn-secondary:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+.account-table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+
+.account-table-wrapper::-webkit-scrollbar-track {
+    background: #f5eee8;
+
+    border-radius: 10px;
+}
+
+
+.account-table-wrapper::-webkit-scrollbar-thumb {
+    background: #8a3158;
+
+    border-radius: 10px;
+}
+
+
+.account-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #651136;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .account-list-page {
+        padding: 25px 25px 40px;
+    }
+
+    .account-list-header {
+        padding: 25px;
+    }
+
+    .account-list-header h1 {
+        font-size: 28px;
+    }
+
+    .account-table-wrapper {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .account-list-footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .account-list-page {
+        padding: 15px;
+    }
+
+
+    .account-list-card {
+        border-radius: 14px;
+    }
+
+
+    .account-list-header {
+        min-height: auto;
+
+        padding: 25px 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .account-list-header h1 {
+        font-size: 25px;
+    }
+
+
+    .account-list-header h1::before {
+        height: 31px;
+    }
+
+
+    .account-list-header p {
+        font-size: 14px;
+    }
+
+
+    .account-count {
+        width: 100%;
+
+        height: 75px;
+
+        flex-direction: row;
+
+        gap: 8px;
+
+        min-width: auto;
+    }
+
+
+    .account-count span {
+        margin-top: 0;
+    }
+
+
+    .account-table-wrapper {
+        margin: 20px 15px 0;
+
+        border-radius: 12px;
+    }
+
+
+    .account-list-table {
+        min-width: 1050px;
+    }
+
+
+    .account-list-table thead th {
+        padding: 16px 12px;
+
+        font-size: 13px;
+    }
+
+
+    .account-list-table tbody td {
+        padding: 15px 12px;
+    }
+
+
+    .account-list-footer {
+        padding: 20px;
+
+        justify-content: center;
+    }
+
+
+    .fincore-btn-secondary {
+        width: 100%;
+    }
+
+}

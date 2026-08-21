@@ -1,0 +1,236 @@
+.transaction-filter-card {
+
+
+    background:#ffffff;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-radius:18px;
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+
+    box-shadow:
+
+    0 8px 25px rgba(59,10,34,.08);
+
+
+    border-top:4px solid #D4AF37;
+
+}
+
+
+
+
+.filter-group {
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+
+}
+
+
+
+.filter-group label {
+
+
+    color:#5A1235;
+
+    font-weight:700;
+
+    font-size:14px;
+
+
+}
+
+
+
+.filter-group input,
+
+.filter-group select {
+
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #E4D39B;
+
+    outline:none;
+
+    font-size:14px;
+
+
+}
+
+
+
+.filter-group input:focus,
+
+.filter-group select:focus {
+
+
+    border-color:#5A1235;
+
+
+}
+
+
+
+
+
+.filter-buttons {
+
+
+    display:flex;
+
+    align-items:end;
+
+    gap:12px;
+
+
+}
+
+
+
+.filter-buttons button {
+
+
+    padding:12px 22px;
+
+    border-radius:25px;
+
+    border:none;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.filter-search-btn {
+
+
+    background:#5A1235;
+
+    color:white;
+
+
+}
+
+
+
+.filter-search-btn:hover {
+
+
+    background:#7A1F45;
+
+}
+
+
+
+.filter-reset-btn {
+
+
+    background:#D4AF37;
+
+    color:#3B0A22;
+
+
+}
+
+
+.transaction-summary {
+
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+.transaction-summary div {
+
+
+    background:white;
+
+    padding:18px 30px;
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.transaction-summary span {
+
+
+    display:block;
+
+    color:#8A777F;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+
+}
+
+
+
+.transaction-summary strong {
+
+
+    font-size:24px;
+
+    color:#5A1235;
+
+
+}
+
+
+
+.summary-credit {
+
+
+    color:#087A3B !important;
+
+}
+
+
+
+.summary-debit {
+
+
+    color:#B83232 !important;
+
+}

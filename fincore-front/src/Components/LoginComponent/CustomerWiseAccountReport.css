@@ -1,0 +1,682 @@
+/* =========================================================
+   CUSTOMER WISE ACCOUNT REPORT
+   ADMIN PANEL
+   ========================================================= */
+
+.customer-wise-account-page {
+    min-height: 100vh;
+    padding: 35px 30px 50px;
+    background: linear-gradient(
+        135deg,
+        #fff7fb,
+        #f8eef4,
+        #f5e8ef
+    );
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.customer-wise-account-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.customer-wise-account-heading h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #5a1235;
+}
+
+.customer-wise-account-heading p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #777;
+}
+
+
+/* =========================================================
+   SEARCH SECTION
+   ========================================================= */
+
+.customer-wise-account-search {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 30px;
+
+    background: #ffffff;
+
+    padding: 24px 25px;
+
+    border-radius: 16px;
+
+    border: 1px solid #ead3df;
+
+    box-shadow:
+        0 8px 25px rgba(90, 18, 53, 0.12);
+
+    box-sizing: border-box;
+}
+
+
+.customer-wise-account-search-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+.customer-wise-account-search-content label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #5a1235;
+}
+
+
+.customer-wise-account-search-content input {
+    flex: 1;
+    min-width: 220px;
+
+    padding: 11px 14px;
+
+    border: 1px solid #d8baca;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    color: #333;
+
+    background: #fff;
+}
+
+
+.customer-wise-account-search-content input:focus {
+    border-color: #7a1f45;
+
+    box-shadow:
+        0 0 0 3px rgba(122, 31, 69, 0.10);
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+   ========================================================= */
+
+.customer-wise-account-search-btn {
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #5a1235,
+        #7a1f45
+    );
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    box-shadow:
+        0 4px 10px rgba(90, 18, 53, 0.25);
+}
+
+
+.customer-wise-account-search-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(90, 18, 53, 0.35);
+}
+
+
+.customer-wise-account-search-btn:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   CLEAR BUTTON
+   ========================================================= */
+
+.customer-wise-account-clear-btn {
+    padding: 11px 18px;
+
+    border: 1px solid #c9a8b8;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #5a1235;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.customer-wise-account-clear-btn:hover {
+    background: #f8eaf1;
+
+    border-color: #7a1f45;
+}
+
+
+/* =========================================================
+   CUSTOMER INFORMATION
+   ========================================================= */
+
+.customer-wise-account-info {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 20px;
+
+    padding: 18px 22px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    border: 1px solid #ead3df;
+
+    box-shadow:
+        0 5px 18px rgba(90, 18, 53, 0.10);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    box-sizing: border-box;
+}
+
+
+.customer-wise-account-info span {
+    color: #777;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.customer-wise-account-info strong {
+    color: #5a1235;
+
+    font-size: 15px;
+
+    margin-right: 25px;
+}
+
+
+/* =========================================================
+   TABLE CONTAINER
+   ========================================================= */
+
+.customer-wise-account-table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    border: 1px solid #ead3df;
+
+    box-shadow:
+        0 8px 25px rgba(90, 18, 53, 0.15);
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.customer-wise-account-table {
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.customer-wise-account-table thead {
+    background: linear-gradient(
+        135deg,
+        #3b0a22,
+        #5a1235,
+        #7a1f45
+    );
+}
+
+
+.customer-wise-account-table th {
+    padding: 16px 14px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    border-right: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.15
+    );
+}
+
+
+.customer-wise-account-table th:last-child {
+    border-right: none;
+}
+
+
+/* =========================================================
+   TABLE BODY
+   ========================================================= */
+
+.customer-wise-account-table td {
+    padding: 15px 14px;
+
+    text-align: center;
+
+    color: #333;
+
+    border-bottom: 1px solid #eadde4;
+
+    white-space: nowrap;
+}
+
+
+.customer-wise-account-table tbody tr {
+    transition: 0.2s ease;
+}
+
+
+.customer-wise-account-table tbody tr:hover {
+    background: #fff5f9;
+}
+
+
+/* =========================================================
+   ACCOUNT NUMBER
+   ========================================================= */
+
+.customer-account-number-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #f5dce8;
+
+    color: #6b123d;
+
+    font-weight: 700;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ACCOUNT TYPE
+   ========================================================= */
+
+.customer-account-type-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #eee4f8;
+
+    color: #62328b;
+
+    font-weight: 600;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   BALANCE
+   ========================================================= */
+
+.customer-account-balance {
+    color: #197044;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.customer-account-status,
+.customer-account-status-active {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.customer-account-status-active {
+    background: #e2f7e9;
+
+    color: #197044;
+}
+
+
+.customer-account-status {
+    background: #fff0d5;
+
+    color: #9a5a00;
+}
+
+
+/* =========================================================
+   LOADING MESSAGE
+   ========================================================= */
+
+.customer-wise-account-message {
+    min-height: 250px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   SPINNER
+   ========================================================= */
+
+.customer-wise-account-spinner {
+    width: 42px;
+
+    height: 42px;
+
+    border: 4px solid #ead3df;
+
+    border-top: 4px solid #7a1f45;
+
+    border-radius: 50%;
+
+    animation:
+        customerWiseAccountSpin
+        0.8s linear infinite;
+
+    margin-bottom: 15px;
+}
+
+
+@keyframes customerWiseAccountSpin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.customer-wise-account-empty {
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 50px auto;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(90, 18, 53, 0.12);
+
+    border: 1px solid #ead3df;
+
+    box-sizing: border-box;
+}
+
+
+.customer-wise-account-empty-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+.customer-wise-account-empty h2 {
+    margin: 0 0 10px;
+
+    color: #5a1235;
+
+    font-size: 23px;
+}
+
+
+.customer-wise-account-empty p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.customer-wise-account-error {
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #fff0f0;
+
+    border: 1px solid #f0bcbc;
+
+    border-radius: 12px;
+
+    color: #a52a2a;
+
+    box-sizing: border-box;
+}
+
+
+.customer-wise-account-error button {
+    margin-top: 15px;
+
+    padding: 9px 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #7a1f45;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.customer-wise-account-error button:hover {
+    background: #5a1235;
+}
+
+
+/* =========================================================
+   RETURN BUTTON
+   ========================================================= */
+
+.customer-wise-account-return {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 25px;
+}
+
+
+.customer-wise-account-return button {
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #5a1235,
+        #7a1f45
+    );
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(90, 18, 53, 0.25);
+
+    transition: 0.2s ease;
+}
+
+
+.customer-wise-account-return button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(90, 18, 53, 0.35);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .customer-wise-account-page {
+        padding: 25px 15px 40px;
+    }
+
+
+    .customer-wise-account-heading h1 {
+        font-size: 25px;
+    }
+
+
+    .customer-wise-account-heading p {
+        font-size: 13px;
+    }
+
+
+    .customer-wise-account-search {
+        padding: 20px;
+    }
+
+
+    .customer-wise-account-search-content {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .customer-wise-account-search-content input {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    .customer-wise-account-search-btn,
+    .customer-wise-account-clear-btn {
+        width: 100%;
+    }
+
+
+    .customer-wise-account-info {
+        flex-wrap: wrap;
+    }
+
+
+    .customer-wise-account-return {
+        justify-content: center;
+    }
+
+}
