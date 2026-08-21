@@ -5,7 +5,6 @@ import { validateUser } from "../../Services/LoginService";
 import "../../DisplayView.css";
 import "../../FinCorePage.css";
 import "./LoginPage.css";
-import toast from "react-hot-toast";
 
 const LoginPage = () => {
 

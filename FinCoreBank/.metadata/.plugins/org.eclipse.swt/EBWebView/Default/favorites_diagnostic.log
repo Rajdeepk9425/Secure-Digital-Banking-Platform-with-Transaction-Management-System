@@ -37,3 +37,13 @@
 2026-08-19 12:51:09.886: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-08-19 12:51:09.886: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-08-19 12:52:03.671: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-21 08:32:02.903: [INFO] CurrentProfilePath: C:\Users\Rajdeep Kala\Music\InfosysProject\FinCoreBank\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-08-21 08:32:02.903: [INFO] Profiles total count: 1
+2026-08-21 08:32:02.904: [INFO] Profile: name=Profile 1 path=C:\Users\Rajdeep Kala\Music\InfosysProject\FinCoreBank\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-08-19T12:33:37.749Z
+2026-08-21 08:32:02.904: [INFO] LastUsedProfileDir: C:\Users\Rajdeep Kala\Music\InfosysProject\FinCoreBank\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-08-21 08:32:02.904: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Rajdeep Kala\Music\InfosysProject\FinCoreBank\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-08-19T12:33:37.749Z
+2026-08-21 08:32:02.904: [INFO] OnDoneLoading sync enabled: 0
+2026-08-21 08:32:02.904: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-08-21 08:32:02.904: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-08-21 08:32:02.904: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-08-21 08:34:49.581: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

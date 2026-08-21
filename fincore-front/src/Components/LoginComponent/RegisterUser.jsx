@@ -5,7 +5,6 @@ import { registerNewUser } from "../../Services/LoginService";
 import '../../DisplayView.css';
 import "../../FinCorePage.css";
 import "./RegisterUser.css";
-import toast from "react-hot-toast";
 
 const RegisterUser = () => {
 

@@ -6,7 +6,6 @@ import { getCustomerByUsername } from '../../Services/CustomerService';
 
 import '../../DisplayView.css';
 import "../../FinCorePage.css";
-import toast from "react-hot-toast";
 
 const CustomerTransactionReport = () => {
 

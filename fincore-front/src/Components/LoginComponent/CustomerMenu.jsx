@@ -8,8 +8,6 @@ import { getCustomerByUsername } from "../../Services/CustomerService";
 import { getAccountsByCustomerId, getBalanceByAccountNumber } from "../../Services/AccountService";
 import { getTransactionByCustomer } from "../../Services/TransactionService";
 import "./CustomerMenu.css";
-import toast from "react-hot-toast";
-
 
 
 const CustomerMenu = () => {

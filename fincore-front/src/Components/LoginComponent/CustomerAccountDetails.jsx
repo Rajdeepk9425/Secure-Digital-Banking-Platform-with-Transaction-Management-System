@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { getAccountsByCustomerId } from "../../Services/AccountService";
 
 import "./CustomerAccountDetails.css";
-import toast from "react-hot-toast";
 
 const CustomerAccountDetails = () => {
 

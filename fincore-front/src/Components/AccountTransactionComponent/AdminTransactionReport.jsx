@@ -5,8 +5,6 @@ import {getAllTransactions} from "../../Services/TransactionService";
 
 import "../../DisplayView.css";
 import "../../FinCorePage.css";
-import toast from "react-hot-toast";
-
 
 
 const AdminTransactionReport =()=>{

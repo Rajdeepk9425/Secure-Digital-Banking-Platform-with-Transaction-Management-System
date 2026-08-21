@@ -9,8 +9,6 @@ import {
 import '../../DisplayView.css';
 import "../../FinCorePage.css";
 import "./AccountReport.css";
-import toast from "react-hot-toast";
-
 
 const AccountReport = () => {
 
