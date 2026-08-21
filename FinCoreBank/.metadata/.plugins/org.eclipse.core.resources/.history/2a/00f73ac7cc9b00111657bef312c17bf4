@@ -1,0 +1,24 @@
+package edu.infosys.finCoreBankApplication;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FinCoreBankApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FinCoreBankApplication.class, args);
+	}
+
+}
+
+/*
+User Id: Lotus, password: Lotus1234, Role: Admin
+User Id: Rajdeep, password: Rajdeep, Role: Customer
+User Id: Akshay, Password: Akshay, Role: Customer
+User Id: Ashlesha, Password: Ashlesha, Role: Customer
+User Id: Lakshmi, Password: Lakshmi, Role:Customer
+User Id: Marigold, Password: Guava, Role:Customer
+
+
+*/
